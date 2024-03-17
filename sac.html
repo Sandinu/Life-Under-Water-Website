@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Card</title>
+<style>
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  .color-selector {
+    margin-bottom: 10px;
+  }
+  .color-selector input[type="radio"] {
+    display: none;
+  }
+  .color-selector label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .color-selector label:hover {
+    border: 2px solid #333;
+  }
+  .color-selector input[type="radio"]:checked + label {
+    border: 2px solid #333;
+  }
+  .size-selector {
+    margin-top: 10px;
+  }
+  .btn {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="product-card">
+  <h2>Product Name</h2>
+  <p>Description of the product goes here.</p>
+  
+  <div class="color-selector">
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red" style="background-color: red;"></label>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue" style="background-color: blue;"></label>
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green" style="background-color: green;"></label>
+  </div>
+  
+  <div class="size-selector">
+    <label for="size">Size:</label>
+    <select id="size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+  </div>
+  
+  <button class="btn">Add to Cart</button>
+</div>
+
+<script>
+  document.querySelector('.btn').addEventListener('click', function() {
+    const selectedColor = document.querySelector('input[name="color"]:checked');
+    const selectedSize = document.getElementById('size').value;
+    
+    if (!selectedColor) {
+      alert('Please select a color.');
+      return;
+    }
+    
+    alert('Added to cart: Color - ' + selectedColor.value + ', Size - ' + selectedSize);
+  });
+</script>
+
+</body>
+</html>

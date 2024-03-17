@@ -1,0 +1,255 @@
+[
+    {
+		"id": 1,
+		"name": "LBW Logo T-Shirt",
+		"price": "1500.00",
+		"images": [
+			{
+				"url": "Images/products/1 a.png",
+				"color": "#000",
+                "colorname": "Black"
+			},
+			{
+				"url": "Images/products/1 b.png",
+				"color": "#0071ad",
+                "colorname": "Blue"
+			},
+            {
+				"url": "Images/products/1 c.png",
+				"color": "#494900",
+                "colorname": "Green"
+			}
+		],
+        "size" : [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ]
+	},
+    {
+		"id": 2,
+		"name": "Life Below Water T",
+		"price": "1500.00",
+		"images": [
+			{
+				"url": "Images/products/2 a.png",
+				"color": "#000",
+                "colorname": "Black"
+			},
+			{
+				"url": "Images/products/2 b.png",
+				"color": "#007593",
+                "colorname": "Blue"
+			},
+			{
+				"url": "Images/products/2 c.png",
+				"color": "#494900",
+                "colorname": "Green"
+			}  
+		],
+        "size" : [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ]
+	},
+    {
+		"id": 3,
+		"name": "LBW Hoodie",
+		"price": "3500.00",
+		"images": [
+			{
+				"url": "Images/products/3 a.png",
+				"color": "#0fa0f8",
+                "colorname": "Blue"
+			},
+			{
+				"url": "Images/products/3 b.png",
+				"color": "#f80f9b",
+                "colorname": "Pink"
+			},
+			{
+				"url": "Images/products/3 c.png",
+				"color": "#f7e80f",
+                "colorname": "Volt"
+			}  
+		],
+        "size" : [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ]
+	},
+    {
+		"id": 4,
+		"name": "Zipper High Neck",
+		"price": "4000.00",
+		"images": [
+			{
+				"url": "Images/products/4 a.png",
+				"color": "#4394d8",
+                "colorname": "Blue"
+			},
+			{
+				"url": "Images/products/4 b.png",
+				"color": "#3b434b",
+                "colorname": "gray"
+			}
+		],
+        "size" : [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ]
+	},
+    {
+		"id": 5,
+		"name": "LBW Sports Jersey",
+		"price": "3500.00",
+		"images": [
+			{
+				"url": "Images/products/5 a.png",
+				"color": "#000",
+                "colorname": "Black"
+			},
+			{
+				"url": "Images/products/5 b.png",
+				"color": "#005d55",
+                "colorname": "Green"
+			}
+		],
+        "size" : [
+            "S",
+            "M",
+            "L"
+        ]
+	},
+    {
+		"id": 6,
+		"name": "LBW CropTop",
+		"price": "3500.00",
+		"images": [
+			{
+				"url": "Images/products/6 b.png",
+				"color": "#d3e72a",
+                "colorname": "Yellow"
+			},
+			{
+				"url": "Images/products/6 a.png",
+				"color": "#d2d2d2",
+                "colorname": "White"
+			},
+			{
+				"url": "Images/products/6 c.png",
+				"color": "#86fcd4",
+                "colorname": "Cyan"
+			}  
+		],
+        "size" : [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ]
+	},
+    {
+		"id": 7,
+		"name": "LBW Ladies T",
+		"price": "1000.00",
+		"images": [
+			{
+				"url": "Images/products/7 a.png",
+				"color": "#1789f2",
+                "colorname": "Blue"
+			},
+			{
+				"url": "Images/products/7 b.png",
+				"color": "#000",
+                "colorname": "Black"
+			}
+		],
+        "size" : [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ]
+	},
+    {
+		"id": 8,
+		"name": "LBW Text Ladies T",
+		"price": "3500.00",
+		"images": [
+			{
+				"url": "Images/products/8 a.png",
+				"color": "#000",
+                "colorname": "Black"
+			},
+			{
+				"url": "Images/products/8 b.png",
+				"color": "#1789f2",
+                "colorname": "Blue"
+			},
+			{
+				"url": "Images/products/8 c.png",
+				"color": "#ec3997",
+                "colorname": "Pink"
+			}  
+		],
+        "size" : [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ]
+	},
+    {
+		"id": 9,
+		"name": "LBW Bottle",
+		"price": "2000.00",
+		"images": [
+			{
+				"url": "Images/products/9 a.png",
+				"color": "#1789f2",
+                "colorname": "Black"
+			},
+			{
+				"url": "Images/products/9 b.png",
+				"color": "#000",
+                "colorname": "Blue"
+			}
+		],
+        "size" : [
+            
+        ]
+	},
+    {
+		"id": 10,
+		"name": "LBW Badge",
+		"price": "500.00",
+		"images": [
+			{
+				"url": "Images/products/10 b.png",
+				"color": "#4af9eb",
+                "colorname": "Cyan"
+			},
+			{
+				"url": "Images/products/10 a.png",
+				"color": "#e4e4e4",
+                "colorname": "white"
+			},
+            {
+				"url": "Images/products/10 c.png",
+				"color": "#d6e922",
+                "colorname": "Lime"
+			}
+		],
+        "size" : [
+            
+        ]
+	}
+]

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c1 : #00132A;
+    --c2 : #84FFE9;
+    --c3: #00C9C9;
+    --c4: #000E1F;
+    --c5: #d8d8d8;
+}
+
+.info{
+    width: 60%;
+    padding: 20px 30px;
+    text-align: center;
+}
+fieldset{
+    border: none;
+    padding: 20px 10px;
+    margin: 20px auto;
+    background: #000E1F;
+    border-radius: 20px;
+}
+label{
+    display: block;
+    color: var(--c3);
+}
+input[type="text"], input[type="number"], input[type="email"],
+select, input[type="date"]{
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    background: rgba(0, 201, 201, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--c2);
+    font-size: 18px;
+}
+input:focus{
+    border: 1px solid #00C9C9;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+.select-container select {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+.select-container select option {
+    padding: 10px;
+    background-color: #00C9C9;
+    color: var(--c1);
+    cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    background: none;
+    width: 100%;
+    position: absolute;
+    right: 30px;
+    height: 30px;
+}
+
+
+.select-container select option:checked {
+    background-color: #84FFE9;
+}
+span{
+    margin-right: 20px;
+    margin-left: 3px;
+    font-size: 18px;
+    color: var(--c2);
+}
+.cards{
+    margin-bottom: 10px;
+}
+
+.rightc{
+    width: 35%;
+    position: absolute;
+    right: 0;
+    top: 115px;
+}
+.cart{
+    text-align: center;
+    background: #000b18;
+    padding: 20px 0px 20px 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+.products{
+    margin-top: 40px;
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+.cart-product{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    margin-bottom: 15px;
+}
+.cart-product-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    margin-right: 20px;
+    align-items: center;
+}
+.cart-product-img img{
+    width: 40px;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.cart-product-desc .head{
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.cart-product-desc .prop{
+    display: inline;
+    margin-right: 5px;
+    color: gray;
+    font-size: 14px;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    align-items: center;
+}
+
+.price{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--c3);
+    text-align: right;
+    align-items: center;
+}
+.total{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+.subt{
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+.total .tot{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--c3);
+}
+.total .pri{
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--c3);
+}
+
+.total .pri span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.total .Otot{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.total .Opri{
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.total .Opri span{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.Ot{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.conditions{
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.conditions input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.complete{
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    padding: 15px 10px;
+    border: none;
+    background: var(--c3);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.complete:hover{
+    background: var(--c2);
+    letter-spacing: 2px;
+}
+
+/* CSS for error messages */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* CSS to highlight invalid input fields */
+input:invalid {
+    border-color: red;
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        width: 100%;
+        padding: 20px 0px;
+
+    }
+    .rightc{
+        width: 100%;
+        position: relative;
+        right: 0;
+        top: 0px;
+    }
+    fieldset{
+        margin: 10px auto;
+        width: 85%;
+    }
+    input[type="text"], input[type="number"], input[type="email"],
+    select, input[type="date"]{
+        width: 80%;
+        margin: 8px;
+        background: rgba(0, 201, 201, 0.2);
+    }
+
+    span{
+        margin-right: 10px;
+    }  
+    .cart{
+        padding: 20px 10px 20px 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    
+    .products{
+        margin-top: 20px;
+    }
+    .cart-product{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .cart-product-img{
+        margin-right: 10px;
+    }
+    .cart-product-img img{
+        width: 35px;
+    }
+    
+    .cart-product-desc .head{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .cart-product-desc .prop{
+        display: none;
+    }
+    
+    .price{
+        font-size: 15px;
+    }
+
+    .total .tot{
+        font-size: 15px;
+    }
+    .total .pri{
+        font-size: 15px;
+    }
+    
+    .total .pri span{
+        font-size: 14px;
+    }
+    .total .Otot{
+        font-size: 20px;
+    }
+    .total .Opri{
+        font-size: 20px;
+    }
+    
+    .total .Opri span{
+        font-size: 15px;
+    }
+    .Ot{
+        margin-top: 10px;
+    }
+    
+    .complete{
+        margin-bottom: 20px;
+    }    
+}

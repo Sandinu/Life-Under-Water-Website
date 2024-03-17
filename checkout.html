@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="Images/Logo.png">
+    <link rel="stylesheet" href="Css/temp.css">
+    <link rel="stylesheet" href="Css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1a58d1a0f7.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="Images/Logo.png" alt="SDG14 Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul class="navc">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="shop.html"  class="active">SHOP</a></li>
+                <li><a href="#">USER PROFILE</a></li>
+                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="#">SITEMAP</a></li>
+                <li><a href="#">TEAM</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+    <main>
+        <div class="info">
+            <h1 class="title">CHECKOUT</h1>
+            <form method="GET" action="#">
+                <fieldset>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required><br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" required><br>
+                </fieldset>
+                <fieldset>
+                    <label for="addr">Delivery Address</label>
+                    <input type="text" name="addr" id="addr" required><br>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" required><br>
+                    <label for="Province">Province</label>
+                    <div class="select-container">
+                        <select name="Province" id="Province" required>
+                          <option value="Western">Western</option>
+                          <option value="Southern">Southern</option>
+                          <option value="Eastern">Eastern</option>
+                          <option value="Sabaragamuwa">Sabaragamuwa</option>
+                          <option value="Uva">Uva</option>
+                          <option value="Central">Central</option>
+                          <option value="NorthCentral">North Central</option>
+                          <option value="NorthWestern">North Western</option>
+                          <option value="Northern">Northern</option>
+                        </select>
+                      </div><br>
+                </fieldset>
+                <fieldset>
+                    <label for="type">Card Type:</label>
+                    <div class="cards">
+                        <input type="radio" name="type" checked> <span>Visa</span> 
+                        <input type="radio" name="type"> <span>Master Card</span>
+                    </div>
+                    <label for="CardNum">Card Number</label>
+                    <input type="number" id="CardNum" required><br>
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" maxlength="3" required><br>
+                    <label for="expiry">Expiry Date</label>
+                    <input type="date" id="expiry" required>
+                </fieldset>
+            
+        </div>
+        <div class="rightc">
+            <div class="cart">
+                <h1>CART SUMMARY</h1>
+                <div class="products">
+                    <!--<div class="cart-product">
+                        <div class="cart-product-img">
+                            <img src="Images/products/1 a.png" alt="T-Shirt black">
+                        </div>
+                        <div class="cart-product-desc">
+                            <div class="head">LBW Logo T Shirt</div>
+                            <div class="prop">Color : Black</div>
+                            <div class="prop">Size : M</div>
+                            <div class="prop">Quantity : 2</div>
+                        </div>
+                        <div class="right">
+                            <div class="price">
+                                <span>LKR 1500.00</span>
+                            </div>
+                        </div>-->
+                </div>
+                <div class="tots">
+                    <!--<div class="total subt">
+                        <h1 class="tot">Sub Total</h1>
+                        <h1 class="pri"><span>LKR</span> 0.00</h1>
+                    </div>
+                    <div class="total">
+                        <h1 class="tot">Delivery Charges</h1>
+                        <h1 class="pri"><span>+ LKR</span> 0.00</h1>
+                    </div>
+                    <div class="total Ot">
+                        <h1 class="Otot">Order Total</h1>
+                        <h1 class="Opri"><span>LKR</span> 0.00</h1>
+                    </div>-->
+                </div>
+            </div>
+            <div class="conditions">
+                <label><input type="checkbox" required>I have read and agree to all Terms and Conditions!</label>
+            </div>
+            <button class="complete">COMPLETE ORDER</button>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <div class="person devider">
+            <a href="#">
+                <h1>SANDINU</h1>
+                <h2>PINNAWALA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>KAVINDI</h1>
+                <h2>ATTIGALA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>VIDUN</h1>
+                <h2>PERERA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>SATHIJA</h1>
+                <h2>DISSANAYAKA</h2>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+<script>
+    hb = document.querySelector('.hamburger');
+    xmark = document.querySelector('.xmark');
+
+    hb.onclick = function(){
+        nav = document.querySelector('.nav');
+        hb.style.display = 'none';
+        xmark.style.display = 'block';
+        nav.classList.toggle('navactive');
+    }
+
+    xmark.onclick = function(){
+        nav = document.querySelector('.nav');
+        hb.style.display = 'block';
+        xmark.style.display = 'none';
+        nav.classList.remove('navactive');
+    }
+</script>
+<script src="Js/checkout.js"></script>
+<script src="Js/formvalidation.js"></script>
+<script src="Js/invoice.js"></script>
+</html>

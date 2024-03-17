@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water | SDG14</title>
+    <link rel="icon" href="Images/Logo.png">
+    <link rel="stylesheet" href="Css/temp.css">
+    <link rel="stylesheet" href="Css/shop.css">
+    <script src="https://kit.fontawesome.com/1a58d1a0f7.js" crossorigin="anonymous"></script>    
+</head>
+<body class="hide-scrollbar">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="SDG14 Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul class="navc">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="shop.html" class="active">SHOP</a></li>
+                <li><a href="#">USER PROFILE</a></li>
+                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="#">SITEMAP</a></li>
+                <li><a href="#">TEAM</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+    <main>
+        <h1 class="title">SHOP</h1>
+        <div class="cartv">
+            <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <span class="cartnum">0</span>
+        </div>
+        <div class="products">
+            <!--<div class="productcard" id="1">
+                <div class="cardcontainer">
+                    <div class="card-img">
+                        <img src="Images/products/1 a.png" alt="T-Shirt black">
+                    </div>
+                </div>
+                <div class="product-desc">
+                    <div class="product-text">LBW Logo T Shirt</div>
+                    <div class="product-price">LKR 1500.00</div>
+                </div>
+                <div class="product-options">
+                    <div class="colors">
+                        <input type="radio" id="red" name="color" value="red">
+                        <label for="red" style="background-color: red;"></label>
+                        <input type="radio" id="blue" name="color" value="blue">
+                        <label for="blue" style="background-color: blue;"></label>
+                        <input type="radio" id="green" name="color" value="green">
+                        <label for="green" style="background-color: green;"></label>
+                    </div>
+                    <div class="size sizebar">
+                        <input type="radio" id="s" name="size" value="s">
+                        <label for="s">S</label>
+                        <input type="radio" id="m" name="size" value="m">
+                        <label for="m">M</label>
+                        <input type="radio" id="l" name="size" value="l">
+                        <label for="l">L</label>
+                    </div>
+                </div>
+                <div class="card-btn">
+                    <button>ADD TO CART <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>-->
+        </div>
+        <div class="cart-e ">
+            <h1 class="title">CART</h1>
+            <button class="cartx"><i class="fa-solid fa-xmark"></i></button>
+            <div class="cart-products">
+                <!--<div class="cart-product">
+                    <div class="cart-product-img">
+                        <img src="Images/products/1 a.png" alt="T-Shirt black">
+                    </div>
+                    <div class="cart-product-desc">
+                        <div class="head">LBW Logo T Shirt</div>
+                        <div class="prop">Color : Black</div>
+                        <div class="prop">Size : M</div>
+                    </div>
+                    <div class="right">
+                        <div class="quantity">
+                            <span class="minus"><</span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                        </div>
+                        <div class="price">
+                            <span>LKR 1500.00</span>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="total">
+                <h1 class="tot">TOTAL</h1>
+                <h1 class="pri"><span>LKR</span> 0.00</h1>
+            </div>
+            <div class="btns">
+                <button class="clear">CLEAR CART</button>
+                <button class="checkout">CHECKOUT</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="person devider">
+            <a href="#">
+                <h1>SANDINU</h1>
+                <h2>PINNAWALA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>KAVINDI</h1>
+                <h2>ATTIGALA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>VIDUN</h1>
+                <h2>PERERA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>SATHIJA</h1>
+                <h2>DISSANAYAKA</h2>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+<script src="Js/shop.js" defer></script>
+
+<script>
+    hb = document.querySelector('.hamburger');
+    xmark = document.querySelector('.xmark');
+
+    hb.onclick = function(){
+        nav = document.querySelector('.nav');
+        hb.style.display = 'none';
+        xmark.style.display = 'block';
+        nav.classList.toggle('navactive');
+    }
+
+    xmark.onclick = function(){
+        nav = document.querySelector('.nav');
+        hb.style.display = 'block';
+        xmark.style.display = 'none';
+        nav.classList.remove('navactive');
+    }
+</script>
+
+<script>
+    cart = document.querySelector('.cartv');
+    cartx = document.querySelector('.cartx');
+
+    cart.onclick = function(){
+        expand = document.querySelector('.cart-e');
+        carti = document.querySelector('.cartv');
+        document.body.classList.add('hide-scrollbar');
+        cartx.style.display = 'block';
+        expand.classList.toggle('expand');
+        carti.classList.toggle('cartv-expand');
+    }
+
+    cartx.onclick = function(){
+        expand = document.querySelector('.cart-e');
+        carti = document.querySelector('.cartv');
+        document.body.classList.remove('hide-scrollbar');
+        cartx.style.display = 'none';
+        expand.classList.remove('expand');
+        carti.classList.remove('cartv-expand');
+    }
+</script>
+</html>

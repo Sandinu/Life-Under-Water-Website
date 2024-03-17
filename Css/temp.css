@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c1 : #00132A;
+    --c2 : #84FFE9;
+    --c3: #00C9C9;
+    --c4: #000E1F;
+    --c5: #d8d8d8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--c1);
+    font-weight: 400;
+    color: white;
+}
+body::-webkit-scrollbar{
+    background-color: var(--c4);
+    width: 10px;
+    overflow: hidden;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--c2);
+}
+
+/*--header--*/
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.logo img{
+    width: 5em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.nav{
+    width: 100%;
+    text-align: right;
+    align-items: center;
+}
+.navc{
+    list-style: none;
+    display: flex;
+    float: right;
+}
+.navc li{
+    margin-right: 2em;
+}
+.navc li a, a:visited{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.navc li a:hover, a:active{
+    color: var(--c2);
+    transition: all 0.3s;
+}
+
+.active{
+    color: var(--c2) !important;
+    font-weight: 600;
+    text-decoration: underline !important;
+    line-height: 1em;
+    text-underline-offset: 0.3em;
+}
+.hamburger{
+    display: none;
+}
+.xmark{
+    display: none;
+}
+
+
+/*--content--*/
+
+
+
+
+
+/*--footer--*/
+footer{
+    background-color: var(--c4);
+    height: 130px;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.person a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--c5);
+    transition: all 0.3s;
+}
+
+.person a:hover, a:active{
+    color: var(--c3);
+    letter-spacing: 3px;
+    transition: all 0.3s;
+}
+.person h1{
+    font-size: 20px;
+    font-weight: 600;   
+}
+
+.person h2{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.devider{
+    position: relative;
+}
+.devider::after{
+    content: '';
+    height: 30%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    background-color: var(--c5);
+}
+.copyright{
+    color: var(--c5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px auto 5px auto;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:1200px) and (min-width:768px){
+    .logo img{
+        width: 4em;
+    }
+    .nav li a{
+        font-size: 0.8em;
+    }
+    .person h1{
+        font-size: 18px;
+        font-weight: 600;   
+    }
+    
+    .person h2{
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: -10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .logo img{
+        width: 2.5em !important;
+        margin-left: 1em;
+        cursor: pointer;
+        display: none;
+    }
+    .navc{
+        list-style: none;
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin: 35% auto 0 auto;
+    }
+    .navc li{
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+    .nav{
+        text-align: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        z-index: 10;
+        background: #00c9c9f8;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        transform: translateX(800px);
+        transition: all 0.3s ease-in-out;
+    }
+    .navactive{
+        transform: translateX(0px);
+    }
+    header{
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 3em;
+    }
+    .navc li a{
+        font-size: 1.3em;
+    }
+
+    footer{
+        height: 80px;
+    }
+    .person h1{
+        font-size: 8px;
+    }
+    
+    .person h2{
+        font-size: 8px;
+        font-weight: 300;
+        margin-top: -2px;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+    .navc li a:hover, a:active{
+        color: var(--c1);
+    }
+    
+    .active{
+        color: var(--c1) !important;
+        font-weight: 600;
+        text-decoration: underline !important;
+        line-height: 1em;
+        text-underline-offset: 0.3em;
+    }
+    .hamburger{
+        background: none;
+        color: white;
+        text-decoration: none;
+        border: none;
+        font-size: 20px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .xmark{
+        background: none;
+        color: white;
+        text-decoration: none;
+        border: none;
+        font-size: 25px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 10;
+    }
+}

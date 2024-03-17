@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c1 : #00132A;
+    --c2 : #84FFE9;
+    --c3: #00C9C9;
+    --c4: #000E1F;
+    --c5: #d8d8d8;
+}
+
+body{
+    margin: 0;
+    background: var(--c1);
+    height: 100vh;
+    overflow: hidden;
+    font-family: poppins;
+    animation: fade 4s ease forwards;
+    transition: opacity 1s ease;
+}
+
+.title{
+    margin: 70px auto;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.title img{
+    width: 100px;
+    height: 100px;
+}
+
+.title_text{
+    line-height: 1px;
+    padding-left: 30px;
+    color: white;
+    border-left: 1px solid white;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title_text h4{
+    font-weight: 400;
+}
+
+.title_text h1{
+    color: var(--c2);
+    font-size: 50px;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.card{
+    width: 280px;
+    height: 350px;
+    min-width: 275px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--c3 );
+    cursor: pointer;
+}
+
+.imgCont{
+    height: 400px;
+    width: 300px;
+}
+.sandinu{
+    background: linear-gradient(rgba(0, 19, 42, 0),rgba(0, 19, 42, 0.9)),url(../Images/Team/Sandinub.png);
+    background-size: cover;
+    background-position: center;
+}
+.kavindi{
+    background: linear-gradient(rgba(0, 19, 42, 0),rgba(0, 19, 42, 0.9)),url(../Images/Team/Kavindib.png);
+    background-size: cover;
+    background-position: center;
+}
+.vidun{
+    background: linear-gradient(rgba(0, 19, 42, 0),rgba(0, 19, 42, 0.9)),url(../Images/Team/Vidunb.png);
+    background-size: cover;
+    background-position: center;
+}
+.sathija{
+    background: linear-gradient(rgba(0, 19, 42, 0),rgba(0, 19, 42, 0.9)),url(../Images/Team/Sathija.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.water h1{
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 ;
+    transform: translate(-30px,140px);
+    text-align: center;
+}
+
+.name{
+    text-align: center;
+    color: white;
+    line-height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    letter-spacing: 2px;
+    
+}
+.name h1{
+    font-size: 35px;
+}
+
+.name h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.name::before{
+    content: '';
+    border-bottom: 1px solid white;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translateX(-50%);
+
+}
+.load{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.load img{
+    width: 80px;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
