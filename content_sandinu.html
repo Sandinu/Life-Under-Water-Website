@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water | SDG14</title>
+    <link rel="icon" href="Images/Logo.png">
+    <link rel="stylesheet" href="Css/temp.css">
+    <script src="https://kit.fontawesome.com/1a58d1a0f7.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="Images/Logo.png" alt="SDG14 Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul class="navc">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#">USER PROFILE</a></li>
+                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="#">SITEMAP</a></li>
+                <li><a href="Team.html">TEAM</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+    <main></main>
+    <footer>
+        <div class="person devider">
+            <a href="#">
+                <h1>SANDINU</h1>
+                <h2>PINNAWALA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>KAVINDI</h1>
+                <h2>ATTIGALA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>VIDUN</h1>
+                <h2>PERERA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="#">
+                <h1>SATHIJA</h1>
+                <h2>DISSANAYAKA</h2>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+<script>
+    hb = document.querySelector('.hamburger');
+    xmark = document.querySelector('.xmark');
+
+    hb.onclick = function(){
+        nav = document.querySelector('.nav');
+        hb.style.display = 'none';
+        xmark.style.display = 'block';
+        nav.classList.toggle('navactive');
+    }
+
+    xmark.onclick = function(){
+        nav = document.querySelector('.nav');
+        hb.style.display = 'block';
+        xmark.style.display = 'none';
+        nav.classList.remove('navactive');
+    }
+</script>
+</html>
