@@ -6,6 +6,7 @@
     <title>Life Below Water | SDG14</title>
     <link rel="icon" href="Images/Logo.png">
     <link rel="stylesheet" href="Css/temp.css">
+    <link rel="stylesheet" href="Css/content_sandinu.css">
     <script src="https://kit.fontawesome.com/1a58d1a0f7.js" crossorigin="anonymous"></script>    
 </head>
 <body>
@@ -27,7 +28,23 @@
         <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
         <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
     </header>
-    <main></main>
+
+    <main>
+        <div id="section1">
+            <div class="parallax">
+                <img src="Images/ContentBg.png" alt="background" class="background">
+                <div class="text">
+                    <h5>SDG 14</h5>
+                    <h1>LIFE BELOW WATER</h1>
+                </div>
+                <img src="Images/ContentFg.svg" alt="foreground" class="foreground">
+            </div>
+        </div>
+        <div id="section2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere et ullam blanditiis aperiam, animi reiciendis, nisi doloribus cupiditate necessitatibus, mollitia repellat veniam dicta ducimus hic ex cum quod sequi porro. Doloremque consectetur animi molestias assumenda facere nobis velit modi dolorem accusamus nemo dignissimos illo maxime atque, voluptates fugiat labore debitis magnam repudiandae laudantium qui aspernatur quidem earum. Aliquid autem nostrum, culpa hic deserunt facere repellat doloremque est commodi magnam accusamus enim eos impedit necessitatibus voluptates nobis quod, consequatur quis cumque maiores pariatur fugiat nam nulla! Magnam nam quibusdam ea blanditiis temporibus fuga labore, corrupti aperiam? Ducimus suscipit architecto quae?</p>
+        </div>
+    </main>
+
     <footer>
         <div class="person devider">
             <a href="#">
@@ -58,6 +75,14 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script>
+        let txt = document.querySelector(".text");    
+        window.addEventListener('scroll', () => {
+            let val = window.scrollY;
+    
+            txt.style.marginTop = val * 1 + 'px';
+        });
+    </script>
 </body>
 <script>
     hb = document.querySelector('.hamburger');
@@ -77,4 +102,5 @@
         nav.classList.remove('navactive');
     }
 </script>
+
 </html>
