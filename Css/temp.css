@@ -32,6 +32,10 @@ header{
     display: flex;
     align-items: center;
     margin-top: 1em;
+    z-index: 5;
+}
+.logo{
+    z-index: 5;
 }
 .logo img{
     width: 5em;
@@ -42,6 +46,7 @@ header{
     width: 100%;
     text-align: right;
     align-items: center;
+    z-index: 5;
 }
 .navc{
     list-style: none;
