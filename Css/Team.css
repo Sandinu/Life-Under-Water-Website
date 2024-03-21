@@ -57,9 +57,9 @@
 
 .card .content{
     position: absolute;
-    bottom: -80px;
+    bottom: -300px;
     width: 100%;
-    height: 160px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,28 +72,38 @@
     cursor: pointer;
 }
 .card:hover .content{
-    height: 400px;
     bottom: 0px;
+    background-color: #000e1f9b;
 }
 
-.content .contentBx h3{
+.content .contentBx  h3 {
     text-transform: uppercase;
     color: var(--c5);
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
-    margin:20px 0 15px ;
-    line-height: 1.1em;
+    line-height: 25px;
+}
+.name {
     transition: 0.5s;
     transition-delay: 0.5s;
-    opacity: 5;
-    transform: translateY(-20px);
-
+    transform: translateY(-70px);
 }
-.card:hover .content .contentBx h3{
+.card:hover .name{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-20px);
+}
+.name h5{
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.card:hover .name h5{
+    font-weight: 300px;
+    font-size: 15px;
+    margin: 8px;
+    opacity: 1;
 }
 
 .content .contentBx h3 span{
@@ -102,18 +112,31 @@
     text-transform: initial;
 
 }
+.content_text .roles li:before{
+    content: "\f13d";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+.roles{
+    margin: auto;
+}
+.content_text .roles li{
+    list-style-type: none;
+
+}
+
 
 .content .icon{
     position: relative;
-    bottom: 10px;
+    bottom: -30px;
     display: flex;
 }
 
 .content .icon li{
     list-style-type:none;
-    margin: 0 10px;
+    margin: 0 10px 20px;
     transform:translateY(-13px) ;
-    opacity:1 ;
+    opacity: 0 ;
     transition: all 0.5s;
     transition-delay: 0.5s;
 }
@@ -124,6 +147,8 @@
 
 .content .icon li a{
     color: var(--c3);
-    font-size: 23.5px;
-
+    font-size: 24px;
+}
+.content .icon li a:hover{
+    color: rgb(158, 194, 227);
 }
