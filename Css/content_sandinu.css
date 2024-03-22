@@ -14,6 +14,9 @@
 .navc li a, .navc li a:visited{
     color: var(--c1);
 }
+.navc li a:hover, .navc li a:active{
+    color: var(--c2);
+}
 
 .parallax{
     position: relative;
@@ -117,4 +120,96 @@
 .target:hover{
     background: linear-gradient(17deg, rgba(0,201,201,0.4) 0%, rgba(132,255,233,0.5) 100%);
     transform: scale(1.03);
+}
+
+#section3{
+    margin: 30px 0;
+    text-align: center;
+}
+
+#section3 h1{
+    color: var(--c2);
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.s3_container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: 10px auto;
+    grid-gap: 15px;
+    grid-template-rows: repeat(4,180px);
+}
+.bulb{
+    position: relative;
+}
+
+.light , .off{
+    position: absolute;
+    font-size:25px;
+}
+
+.light{
+    display: none;
+    text-shadow: 0px 0px 20px #FFD43B;
+    transform: scale(1);
+    transition: all 0.2;
+}
+
+.todo:hover .light{
+    display: initial;
+    transform: scale(1.1);
+}
+
+.todo{
+    cursor: pointer;
+    border: 1px solid var(--c3);
+    padding: 20px 30px;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+}
+.todo h2{
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.todo:hover{
+    background: linear-gradient(17deg, rgba(0,201,201,0.4) 0%, rgba(132,255,233,0.5) 100%);
+    transform: scale(1.02);
+}
+
+.todo1{
+    display: grid;
+    grid-column: 1/span 4;
+    grid-row: 1;
+}
+.todo2{
+    display: grid;
+    grid-column: span 3;
+    grid-row: 1;
+}
+.todo3{
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.todo4{
+    display: grid;
+    grid-column: span 4;
+    grid-row: span 1;
+}
+.todo5{
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.todo6{
+    display: grid;
+    grid-column: span 4;
+    grid-row: span 1;
+}
+.todo7{
+    display: grid;
+    grid-column: span 6;
+    grid-row: span 1;
 }
