@@ -224,7 +224,7 @@ function Invoice(formData, cartProducts) {
     </head>
     <body>
         <header>
-            <img src="http://www.srilanka2030.lk/images/goals/goal14/TheGlobalGoals_Icons_Color_Goal_14.png" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sustainable_Development_Goal_14.png/900px-Sustainable_Development_Goal_14.png?20180106212933" alt="">
             <h1>LIFE BELOW WATER SHOP</h1>
         </header>
         <div class="top">
