@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 307.16 177.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00c9c9;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #ffd62c;
+      }
+
+      .cls-8 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #000;
+        mix-blend-mode: soft-light;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: #ffc229;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="60.35" y1="93.63" x2="307.16" y2="93.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9fcff"/>
+      <stop offset="1" stop-color="#00c9c9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="131.52" y2="131.52" xlink:href="#linear-gradient"/>
+  </defs>
+  <g class="cls-8">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_3" data-name="Layer 3">
+        <g>
+          <polygon class="cls-1" points="60.35 93.26 75.67 177.77 307.16 124.91 60.35 93.26"/>
+          <polygon class="cls-2" points="307.16 124.91 60.35 93.26 89.72 62.34 307.16 124.91"/>
+          <g>
+            <rect class="cls-6" x="106.85" y="31.62" width="130.17" height="92.19" transform="translate(-16.21 63.49) rotate(-20)"/>
+            <path class="cls-3" d="M123.34,134.5l3.2,8.79,61.16-22.26,61.16-22.26-3.2-8.79c-2.19-6.01-7.41-10.39-13.71-11.51l-56.21-9.92c-4.73-.83-9.54.92-12.62,4.59l-36.68,43.73c-4.11,4.9-5.29,11.62-3.11,17.63Z"/>
+            <path class="cls-4" d="M221.08,22.43l-3.74-10.29-61.16,22.26-61.16,22.26,3.74,10.29c2.56,7.03,8.13,12.36,14.61,13.98l57.86,14.48c4.86,1.22,9.68-.53,12.62-4.59l35.02-48.29c3.92-5.41,4.76-13.07,2.21-20.1Z"/>
+            <path class="cls-3" d="M220.54,20.93l-3.2-8.79-61.16,22.26-61.16,22.26,3.2,8.79c2.19,6.01,7.41,10.39,13.71,11.51l56.21,9.92c4.73.83,9.54-.92,12.62-4.59l36.68-43.73c4.11-4.9,5.29-11.62,3.11-17.63Z"/>
+          </g>
+          <polygon class="cls-5" points="307.16 124.91 0 156.77 47.98 106.28 307.16 124.91"/>
+          <circle class="cls-1" cx="217.08" cy="19.1" r="19.1"/>
+          <path class="cls-7" d="M216.38,28.25c-.11-.12-.16-.26-.16-.44v-15.03l-4.48,3.44c-.12.11-.26.16-.4.16-.16,0-.31-.09-.45-.27l-.64-.83c-.09-.12-.13-.25-.13-.37,0-.2.09-.36.27-.48l5.78-4.48c.2-.12.43-.19.69-.19h1.25c.18,0,.32.06.44.17.12.12.17.26.17.44v17.43c0,.18-.06.32-.17.44-.12.12-.26.17-.44.17h-1.31c-.18,0-.32-.06-.43-.17Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

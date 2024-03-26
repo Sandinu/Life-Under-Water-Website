@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c1 : #00132A;
+    --c2 : #84FFE9;
+    --c3: #00C9C9;
+    --c4: #000E1F;
+    --c5: #d8d8d8;
+}
+body::-webkit-scrollbar{
+    background-color: var(--c4);
+    width: 10px;
+    overflow: hidden;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--c2);
+}
+body{
+    background: var(--c1);
+    color: white;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header h1{
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+}
+
+#section1{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    text-align: left;
+    line-height: 20px;
+    transform: translateY(-50px);
+    user-select: none;
+}
+.personal_Image{
+    width: 47%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.text h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--c2);
+    font-style: italic;
+}
+.text h1 span{
+    color: white;
+    font-style: normal;
+}
+
+.text h3{
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: var(--c2);
+    font-weight: 600;
+}
+
+.text h3 span{
+    color: white;
+}
+
+.text h5{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--c2);
+    margin-top: -10px;
+}
+
+.text h5 span{
+    color: white;
+}
+.nav{
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    text-decoration: none;
+    color: var(--c3);
+    font-size: 16px;
+    border: 1px solid var(--c3);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.nav:hover{
+    background: var(--c2);
+    border: 1px solid var(--c2);
+    color: var(--c1);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#section2 h1{
+    color: var(--c3);
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.container{
+    width: 95%;
+    margin: 220px auto 30px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    gap: 200px 100px;
+}
+.card{
+    width: 350px;
+    height: 420px;
+    background: var(--c3);
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: 60px 60px 10px 10px;
+    transition: all 0.3s ease-in-out;
+}
+.card .img{
+    justify-content: center;
+    display: flex;
+
+}
+.card .img img{
+    width: 430px;
+    margin-top: -240px;
+    transition: all 0.3s ease-in-out;
+}
+
+.txt{
+    margin-top: -110px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    user-select: none;
+}
+.txt h4{
+    color: var(--c1);
+    font-size: 30px;
+}
+.txt p{
+    color: black;
+    font-weight: 500;
+    margin-top: -30px;
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--c1);
+    background: var(--c5);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.card a:hover{
+    background: var(--c1);
+    letter-spacing: 1px;
+    color: white;
+}
+
+.card:hover .img img{
+    transform: scale(1.03);
+}
+
+.card:hover{
+    background: var(--c2);
+}
+
+footer{
+    padding: 0;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+footer h1{
+    font-size: 150px;
+    letter-spacing: 30px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(170px);
+    color: rgba(255, 255, 255, 0.1);
+    font-style: italic;
+    font-weight: 800;
+}
+
+@media screen and (max-width:768px) {
+    .text{
+        position: relative;
+        top: 180px;
+        left: initial;
+        text-align: center;
+        line-height: 30px;
+        transform: translateY(-20px);
+    }
+    .personal_Image{
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .text h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .text h1 span{
+        font-size: 38px;
+    }
+    
+    .text h3{
+        font-size: 25px;
+        margin-top: -10px;
+    }
+    
+    .text h3 span{
+        color: white;
+    }
+    
+    .text h5{
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 3px;
+        color: var(--c2);
+        margin-top: -20px;
+    }
+    
+    .text h5 span{
+        color: white;
+    }
+    #section1{
+        text-align: center;
+    }
+    .nav{
+        position: relative;
+        top: 160px;
+        bottom: initial;
+        left: initial;
+    }
+    .card{
+        width: 330px;
+    }
+    .card .img img{
+        width: 400px;
+    }
+    footer{
+        height: 50px;
+    }
+    footer h1{
+        font-size: 50px;
+        bottom: 0;
+        transform: translateY(55px);
+        letter-spacing: 5px;
+    }
+}
