@@ -39,7 +39,7 @@ input[type="text"], input[type="email"], textarea{
     border-radius: 5px;
     padding: 10px;
 }
-input, textarea{
+input[type="text"], input[type="email"], textarea{
     margin-bottom: 20px;
 }
 
@@ -52,4 +52,38 @@ input::placeholder, textarea::placeholder{
     letter-spacing: 1px;
     font-family: poppins, sans-serif;
     font-weight: 400;
+}
+
+.qbox{
+    border: 1px solid var(--c3);
+    padding: 20px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input[type="range"]{
+    width: 500px;
+    margin-top: 10px;
+}
+
+button{
+    width: 400px;
+    background-color: var(--c3);
+    height: 40px;
+    padding: 0 10px;
+    margin: auto;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background-color: var(--c2);
+}
+input, textarea{
+    color: var(--c2);
 }
