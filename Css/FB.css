@@ -33,11 +33,21 @@ label{
 }
 input[type="text"], input[type="email"], textarea{
     width: 100%;
-    background-color: var(--c4);
+    background-color: var(--c1);
     outline: none;
     border: 1px solid var(--c3);
     border-radius: 5px;
     padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    width: 100%;
+    background-color: var(--c4);
+    outline: none;
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px var(--c2);
 }
 input[type="text"], input[type="email"], textarea{
     margin-bottom: 20px;
@@ -85,5 +95,27 @@ button:hover{
     background-color: var(--c2);
 }
 input, textarea{
+    color: var(--c2);
+}
+
+.stars{
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.stars i{
+    margin: 0 5px;
+    color: var(--c4);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: var(--c3);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.stars i:hover{
+    color: var(--c3);
+}
+
+.stars i.check{
     color: var(--c2);
 }

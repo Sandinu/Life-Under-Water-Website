@@ -33,9 +33,9 @@
             <h1>FEEDBACK FORM</h1>
         </div>
         <form>
-            <label for="name">NAME*</label><br>
+            <label for="name">NAME *</label><br>
             <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
-            <label for="email">EMAIL*</label><br>
+            <label for="email">EMAIL *</label><br>
             <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
             <div class="qbox">
                 <label for="visit">IS THIS YOUR FIRST TIME VISITING?</label>
@@ -43,15 +43,21 @@
                 <label><input type="radio" id="visit" name="visit" value="no"> NO </label>
             </div>
             <div class="qbox">
-                <label for="visit">WAS THIS WEBSITE INFORMATIVE AND EASY TO NAVIGATE?</label>
-                <label><input type="radio" id="visit" value="yes" checked> YES </label>
-                <label><input type="radio" id="visit" value="no"> NO </label>
+                <label for="info">WAS THIS WEBSITE INFORMATIVE AND EASY TO NAVIGATE?</label>
+                <label><input type="radio" id="info" name="info" value="yes" checked> YES </label>
+                <label><input type="radio" id="info" name="info" value="no"> NO </label>
             </div>
             <label for="improvements">IF 'NO', SUGGEST ANY IMPROVEMENTS FOR THE FUTURE.</label><br>
             <textarea name="improvements" id="improvements" cols="50" rows="10" placeholder="Enter your message here..."></textarea><br>
             <div class="qbox">
-                <label for="satisfaction">HOW SATISFIED ARE YOU WITH OUR SERVICES? <br> <span>(1: Not Satified at all <-> 10: Extremely Satified)</span></label><br>
-                <input type="range" name="satisfaction" id="satisfaction" min="1" max="10" value="10" required>
+                <label for="satisfaction">HOW SATISFIED ARE YOU WITH OUR SERVICES? <br> <span>( 1: Not Satified at all <-> 5: Extremely Satified )</span></label><br>
+                <div class="stars">
+                    <i class="fa-solid fa-star check" data-value="1" active></i>
+                    <i class="fa-solid fa-star" data-value="2"></i>
+                    <i class="fa-solid fa-star" data-value="3"></i>
+                    <i class="fa-solid fa-star" data-value="4"></i>
+                    <i class="fa-solid fa-star" data-value="5"></i>
+                </div>
             </div>
             <div class="qbox">
                 <label for="recommend">WOULD YOU RECOMMEND OUR SERVICES?</label>
@@ -93,6 +99,7 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script src="Js/FB.js"></script>
 </body>
 <script>
     hb = document.querySelector('.hamburger');
