@@ -47,18 +47,29 @@
                 </div>
             
                 <div class="topic">
-                    <h3 class="step">Step 1 Personal Details || Qustion 1/4</h3>
+                    <h3 class="step">Step<span class="stepNo"> 1</span> -<span id="questionType"> Personal Details</span></h3>
+                    <h3 class="que">Question <span class="queNum">1/4</span></h3> 
                     <div class="contentBox">
-                        <span class="name">Your Name</span>
+                        <h4 class="subQus">Full Name</h4>
                         <div class="getInput">
                             <input type="text" required maxlength="10" size="50">
                         </div>
-                        
-                    </div>
+                     </div>
+                     
                 </div>
+                <div class="btn">
+                    <button class="nextBtn">Next
+                        <i class="fa-solid fa-hand-point-right"></i>
+                    </button>
+                    <button class="skipBtn">Skip
+                        <i class="fa-solid fa-share"></i>
+                    </button>
+                </div>
+               
                 
             </div>
         </div>
+    <script src="Js/userprofile.js"></script>
     </main>
     <footer>
         <div class="person devider">
@@ -109,4 +120,5 @@
         nav.classList.remove('navactive');
     }
 </script>
+
 </html>
