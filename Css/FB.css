@@ -91,6 +91,12 @@ button{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+.red{
+    background-color: red;
+}
+.red:hover{
+    background-color: rgb(255, 85, 85);
+}
 button:hover{
     background-color: var(--c2);
 }

@@ -1,5 +1,6 @@
 const stars = document.querySelectorAll('.stars i');
 const form = document.querySelector('form');
+const clear = document.querySelector('.red');
 
 stars.forEach((star) => {
     star.addEventListener('click', () =>{
@@ -17,6 +18,14 @@ function activateStars(color) {
         }
     });
 }
+
+clear.addEventListener("click", () => {
+    stars.forEach((star,index) => {
+        if (index > 0){
+            star.classList.remove("check");
+        }
+    })
+});
 
 form.addEventListener('submit', function(event) {
     const nameInput = document.getElementById('name');
