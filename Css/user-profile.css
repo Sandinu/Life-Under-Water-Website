@@ -113,6 +113,7 @@ main{
     width: 375px;
     border-radius: 5px;
     align-items: center;
+    border: none;
 }
 .inputBox .btn .nextBtn{
     width: 200px;
@@ -157,4 +158,51 @@ main{
     backdrop-filter: blur(1px);
     background-color:rgba(0, 19, 42, 0.519);
     cursor: pointer;
+}
+.progress{
+    height: 30px;
+    width: 500px;
+    position: relative;
+    color: #d8d8d8;
+    background-color: #d8d8d8;
+    margin:0 auto 100px auto;
+    top: -35px;
+    border-radius: 15px;
+    align-items: center;
+}
+.progressBar{
+    width:0%;
+    min-width: 2rem; 
+    content: '';
+    height: 30px;
+    background-color: #84FFE9;
+    transition: width 0.3s;
+    border-radius: 15px;
+    align-items: center;
+    
+}
+.progressPer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    color: black;
+    align-items: center;
+    display: flex;
+}
+.progressPer h2{
+    font-weight: 400;
+    font-size: 16px;
+}
+.outputBox{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: var(--c5);
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    margin: 0 auto 100px auto;
+
 }

@@ -39,8 +39,8 @@
                 <div class="menuBox">
                     <nav class="icon">
                         <a onclick="tab(0)" class="tab"><i class="fa-solid fa-user"></i></a>
-                        <a onclick="tab(1)" class="tab"><i class="fa-solid fa-handshake-angle"></i></a>
-                        <a onclick="tab(2)" class="tab"><i class="fa-solid fa-graduation-cap"></i></a>
+                        <a onclick="tab(1)" class="tab"><i class="fa-solid fa-graduation-cap"></i></a>
+                        <a onclick="tab(2)" class="tab"><i class="fa-solid fa-handshake-angle"></i></a>
                         <a onclick="tab(3)" class="tab"><i class="fa-solid fa-address-book"></i></a>
                     </nav>
                     
@@ -69,6 +69,12 @@
                 
             </div>
         </div>
+        <div class="progress">
+            <div class="progressBar" data-lable=""></div>
+            <div class="progressPer" id="progressPer"><h2>0%</h2></div>
+        </div>
+        <div class="outputBox"></div>
+
     <script src="Js/userprofile.js"></script>
     </main>
     <footer>
@@ -120,5 +126,7 @@
         nav.classList.remove('navactive');
     }
 </script>
+
+//give me a code to update the progress bar, when the input bar is filled and then clicked the next button
 
 </html>
