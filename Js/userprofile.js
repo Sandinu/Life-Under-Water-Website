@@ -69,17 +69,20 @@ function handleNextButtonClick(){
         updateTopic();   
 }
 function handleSkipButtonClick() {
-    if (currentQusIndex === questionArr.length - 1) {
-        if (currentTopicIndex === 2) {
-            currentTopicIndex = 0;
+    if (currentQusIndex === questionArr.length - 1 && currentTopicIndex === topicArr.length - 1) {
+       /* if (currentTopicIndex === topicArr.length - 1) {
+            currentTopicIndex = 0; // Start from the first step
         } else {
             currentTopicIndex++;
         }
-        currentQusIndex = 0;
-    } else {
-        currentQusIndex++;
-    }
-
+        currentQusIndex = 0;*/ // Start from the first question of the next step
+        return;
+    } 
+        currentQusIndex++; // Move to the next question
+        if (currentQusIndex === 4) { // After first 4 questions, update topic and step
+            currentTopicIndex++;
+            currentQusIndex;
+        }
     updateQus();
     updateTopic();
 }
