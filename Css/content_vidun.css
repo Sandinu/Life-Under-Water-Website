@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c1 : #00132A;
+    --c2 : #84FFE9;
+    --c3: #00C9C9;
+    --c4: #000E1F;
+    --c5: #d8d8d8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--c1);
+    font-weight: 400;
+    color: white;
+}
+body::-webkit-scrollbar{
+    background-color: var(--c4);
+    width: 10px;
+    overflow: hidden;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--c2);
+}
+
+/*--header--*/
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    z-index: 5;
+}
+.logo{
+    z-index: 5;
+}
+.logo img{
+    width: 6em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.nav{
+    width: 100%;
+    text-align: right;
+    align-items: center;
+    z-index: 5;
+}
+.navc{
+    list-style: none;
+    display: flex;
+    float: right;
+}
+.navc li{
+    margin-right: 2em;
+}
+.navc li a, a:visited{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.navc li a:hover, a:active{
+    color: var(--c2);
+    transition: all 0.3s;
+}
+
+.active{
+    color: var(--c2) !important;
+    font-weight: 600;
+    text-decoration: underline !important;
+    line-height: 1em;
+    text-underline-offset: 0.3em;
+}
+.hamburger{
+    display: none;
+}
+.xmark{
+    display: none;
+}
+
+
+/*--content--*/
+#section1 .content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color:#dae8f3;
+    top:40%;
+    text-align: center;
+    margin-top: 80px;
+}
+.content h1 {
+    line-height: 10px;
+    margin: 100px;
+    font-size: 100px;
+    font-weight: 800;
+}
+.content h1:hover{
+    -webkit-text-stroke:2px #4fb8e1;
+    color: transparent;
+}
+.content  .para1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: beige;
+}
+button{
+    width: 170px;
+    height: 48px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    border-radius: 25px;
+    font-size:18px ;
+    background-color: #00C9C9;
+    cursor: pointer;
+    border: none;
+    
+}
+button:hover{
+    background-color: var(--c5) ;
+    transition: 0.5s;
+    color: #00132A;
+}
+.back-video{
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    
+    z-index: -1;
+}
+#section1 #nav2{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    z-index: 5;
+}
+.navc2{
+    text-align: center;
+    border: 1px solid var(--c2);
+    backdrop-filter: blur(5px) ;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 10;
+    margin: auto;
+    padding: 12px 15px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.navc2 li {
+    list-style: none;
+    margin-right: 2em;
+    display: inline;
+    
+}
+.navc2 li a{
+    text-decoration: none;
+    color: var(--c5);
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+.navc2 li a:hover{
+    color: #00C9C9;
+
+}
+
+#section2{
+    padding: 250px 10px 5px;
+    position: relative;
+    z-index: 2;
+}
+.topic{
+    text-align: center;
+    margin-top: 120px;
+}
+#section2 .topic h2{
+        font-size: 45px;
+        color: var(--c2);
+        justify-content: center;
+}
+.topic p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 65%;
+    margin: 10px auto;
+}
+
+#section .container{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+.targetBox {
+    border: 1px solid var(--c2);
+    display: flex;
+    margin: 20px;
+    height: 300px;
+}
+.targetBox:hover{
+    box-shadow: rgba(74, 230, 230, 0.619);
+}
+.targetBox .content{
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+    
+}
+.targetBox .content h3{
+    justify-content: center;
+    font-size: 25px;
+}
+.targetBox img{
+     width: 200px;
+    height: 300px;
+}
+
+#section3{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background-color: black;
+    position: relative;
+    padding-bottom: 10px;
+    bottom: 10px;
+}
+.queot{
+    display: flex;
+    padding-right: 20px;
+    text-align: justify;
+    padding-right: 20px;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+.queot img{
+    width: 450px;
+    height: 250px;
+    padding: 30px;
+}
+ .text h2{
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    justify-content: center;
+    float: right;
+
+}
+#section4{
+    height: 550px;
+    margin: 30px 0;
+    text-align: center;
+    border: 1px solid var(--c2);
+   background: linear-gradient(#4583cf8e,#04070790),url(../Images/vidun/underwater.jpg);
+   background-position: center;
+   background-size: cover;
+}
+#section4 h1{
+    font-size: 40px;
+    color: var(--c2);
+    
+}
+#section4 p{
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+#section4 .information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+}
+.information h3{
+    font-size: 30px;
+    color: var(--c4);
+}
+.information h4{
+    font-size:20px ;
+}
+.facts{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+@media (min-aspect-ratio:16/9) {
+    .content video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9) {
+    .content video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+footer{
+    background-color: var(--c4);
+    height: 130px;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.person a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--c5);
+    transition: all 0.3s;
+}
+
+.person a:hover, a:active{
+    color: var(--c3);
+    letter-spacing: 3px;
+    transition: all 0.3s;
+}
+.person h1{
+    font-size: 20px;
+    font-weight: 600;   
+}
+
+.person h2{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.devider{
+    position: relative;
+}
+.devider::after{
+    content: '';
+    height: 30%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    background-color: var(--c5);
+}
+.copyright{
+    color: var(--c5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px auto 5px auto;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:1200px) and (min-width:768px){
+    .logo img{
+        width: 4em;
+    }
+    .nav li a{
+        font-size: 0.8em;
+    }
+    .person h1{
+        font-size: 18px;
+        font-weight: 600;   
+    }
+    
+    .person h2{
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: -10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .logo img{
+        width: 2.5em !important;
+        margin-left: 1em;
+        cursor: pointer;
+        display: none;
+    }
+    .navc{
+        list-style: none;
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin: 35% auto 0 auto;
+    }
+    .navc li{
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+    .nav{
+        text-align: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        z-index: 10;
+        background: #00c9c9f8;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        transform: translateX(800px);
+        transition: all 0.3s ease-in-out;
+    }
+    .navactive{
+        transform: translateX(0px);
+    }
+    header{
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 3em;
+    }
+    .navc li a{
+        font-size: 1.3em;
+    }
+
+    footer{
+        height: 80px;
+    }
+    .person h1{
+        font-size: 8px;
+    }
+    
+    .person h2{
+        font-size: 8px;
+        font-weight: 300;
+        margin-top: -2px;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+    .navc li a:hover, a:active{
+        color: var(--c1);
+    }
+    
+    .active{
+        color: var(--c1) !important;
+        font-weight: 600;
+        text-decoration: underline !important;
+        line-height: 1em;
+        text-underline-offset: 0.3em;
+    }
+    .hamburger{
+        background: none;
+        color: white;
+        text-decoration: none;
+        border: none;
+        font-size: 20px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .xmark{
+        background: none;
+        color: white;
+        text-decoration: none;
+        border: none;
+        font-size: 25px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+
+
+
+

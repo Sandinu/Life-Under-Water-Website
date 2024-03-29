@@ -67,31 +67,41 @@ function handleNextButtonClick(){
     
         updateQus();
         updateTopic();   
+        if (currentQusIndex > 0) {
+            let prevQus = questionArr[currentQusIndex - 1];
+            let answer = answerArr[currentQusIndex - 1];
+            printOutputdata(prevQus, answer);
+        }
+}
+function printOutputdata(question, answer){
+    let outputBox = document.querySelector('.outputBox');
+    outputBox.innerHTML = `<p><strong>${question}</strong>: ${answer}</p>`;
 }
 function handleSkipButtonClick() {
-    if (currentQusIndex === questionArr.length - 1 && currentTopicIndex === topicArr.length - 1) {
-       /* if (currentTopicIndex === topicArr.length - 1) {
-            currentTopicIndex = 0; // Start from the first step
+    if (currentQusIndex === questionArr.length - 1 || currentTopicIndex === topicArr.length - 1) {
+        if (currentTopicIndex === topicArr.length - 1) {
+            //currentTopicIndex = 0; // Start from the first step
         } else {
             currentTopicIndex++;
         }
-        currentQusIndex = 0;*/ // Start from the first question of the next step
-        return;
-    } 
+        currentQusIndex = 0; // Start from the first question of the next step
+    } else {
         currentQusIndex++; // Move to the next question
         if (currentQusIndex === 4) { // After first 4 questions, update topic and step
             currentTopicIndex++;
-            currentQusIndex;
+            currentQusIndex = 0;
         }
+        if (currentQusIndex === 4 || currentQusIndex === 8) { // Change question after the 3rd and 7th index in questionArr
+            currentQusIndex++;
+        }
+    }
     updateQus();
     updateTopic();
 }
 
 skipButton.addEventListener('click', handleSkipButtonClick);
 
-function printOutputdata(){
 
-}
 nextButton.addEventListener('click', handleNextButtonClick);
 
 updateTopic();
