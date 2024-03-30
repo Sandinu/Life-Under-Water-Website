@@ -107,24 +107,25 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+    
+        hb.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+    
+        xmark.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
 </body>
-<script>
-    hb = document.querySelector('.hamburger');
-    xmark = document.querySelector('.xmark');
 
-    hb.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'none';
-        xmark.style.display = 'block';
-        nav.classList.toggle('navactive');
-    }
-
-    xmark.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'block';
-        xmark.style.display = 'none';
-        nav.classList.remove('navactive');
-    }
-</script>
 
 </html>

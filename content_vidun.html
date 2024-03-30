@@ -11,8 +11,8 @@
 <body>
     <header>
         <div class="back-video">
-            <video autoplay loop muted plays-inline>
-                <source src="Images/vidun/underwater3.mp4">
+            <video autoplay loop muted playsinline>
+                <source src="Images/vidun/video/5117938-hd_1920_1080_24fps.mp4">
             </video>
         </div>
         
@@ -23,11 +23,11 @@
             <ul class="navc">
                 <li><a href="#" class="active">HOME</a></li>
                 <li><a href="#">GALLERY</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">USER PROFILE</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="User-profile.html">USER PROFILE</a></li>
                 <li><a href="#">FEEDBACK</a></li>
                 <li><a href="#">SITEMAP</a></li>
-                <li><a href="#">TEAM</a></li>
+                <li><a href="Team.html">TEAM</a></li>
             </ul>
         </nav>
         <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
@@ -218,23 +218,24 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+    
+        hb.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+    
+        xmark.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
 </body>
-<script>
-    hb = document.querySelector('.hamburger');
-    xmark = document.querySelector('.xmark');
 
-    hb.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'none';
-        xmark.style.display = 'block';
-        nav.classList.toggle('navactive');
-    }
-
-    xmark.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'block';
-        xmark.style.display = 'none';
-        nav.classList.remove('navactive');
-    }
-</script>
 </html>
