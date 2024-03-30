@@ -41,15 +41,9 @@
             </div>
             <div class="contentnav">
                 <ul>
-                    <a href="#section2">
-                        <li>TARGETS</li>
-                    </a>
-                    <a href="#section3">
-                        <li>THINGS TO DO</li>
-                    </a>
-                    <a href="#section4">
-                        <li>NEWSLETTER</li>
-                    </a>
+                    <li><a href="#section2">TARGETS</a></li>
+                    <li><a href="#section3">THINGS TO DO</a></li>
+                    <li><a href="#section4">NEWSLETTER</a></li>
                 </ul>
             </div>
         </div>
@@ -252,25 +246,26 @@
             txt.style.marginTop = val * 1 + 'px';
         });
     </script>
+    <script src="Js/content_sandinu.js"></script>
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+    
+        hb.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+    
+        xmark.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
+    
 </body>
-<script src="Js/content_sandinu.js"></script>
-<script>
-    hb = document.querySelector('.hamburger');
-    xmark = document.querySelector('.xmark');
-
-    hb.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'none';
-        xmark.style.display = 'block';
-        nav.classList.toggle('navactive');
-    }
-
-    xmark.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'block';
-        xmark.style.display = 'none';
-        nav.classList.remove('navactive');
-    }
-</script>
 
 </html>
