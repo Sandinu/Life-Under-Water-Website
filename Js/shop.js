@@ -6,6 +6,7 @@ let carticon = document.querySelector(".cartv");
 let body = document.querySelector("body");
 let cart = [];
 const checkoutBtn = document.querySelector(".checkout");
+const productFileUrl = "https://raw.githubusercontent.com/Sandinu/CW-Jason/359f2f37d0cec0c7770435c5dd9b183ee7d6e2bb/products.json";
 
 checkoutBtn.addEventListener("click", function() {
     if (cart.length > 0) {
@@ -19,7 +20,8 @@ const saveCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-fetch(productFile)
+//fetch(productFile) - Unable to fetch products from a json file in the local storage due to CORS policy, therefore the same json file is added to github and called from it.
+fetch(productFileUrl)
     .then((response) => {
         return response.json();
     })
