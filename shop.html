@@ -133,48 +133,49 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script src="Js/shop.js" defer></script>
+
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+
+        hb.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+
+        xmark.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
+
+    <script>
+        cart = document.querySelector('.cartv');
+        cartx = document.querySelector('.cartx');
+
+        cart.onclick = function(){
+            expand = document.querySelector('.cart-e');
+            carti = document.querySelector('.cartv');
+            document.body.classList.add('hide-scrollbar');
+            cartx.style.display = 'block';
+            expand.classList.toggle('expand');
+            carti.classList.toggle('cartv-expand');
+        }
+
+        cartx.onclick = function(){
+            expand = document.querySelector('.cart-e');
+            carti = document.querySelector('.cartv');
+            document.body.classList.remove('hide-scrollbar');
+            cartx.style.display = 'none';
+            expand.classList.remove('expand');
+            carti.classList.remove('cartv-expand');
+        }
+    </script>
 </body>
-<script src="Js/shop.js" defer></script>
 
-<script>
-    hb = document.querySelector('.hamburger');
-    xmark = document.querySelector('.xmark');
-
-    hb.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'none';
-        xmark.style.display = 'block';
-        nav.classList.toggle('navactive');
-    }
-
-    xmark.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'block';
-        xmark.style.display = 'none';
-        nav.classList.remove('navactive');
-    }
-</script>
-
-<script>
-    cart = document.querySelector('.cartv');
-    cartx = document.querySelector('.cartx');
-
-    cart.onclick = function(){
-        expand = document.querySelector('.cart-e');
-        carti = document.querySelector('.cartv');
-        document.body.classList.add('hide-scrollbar');
-        cartx.style.display = 'block';
-        expand.classList.toggle('expand');
-        carti.classList.toggle('cartv-expand');
-    }
-
-    cartx.onclick = function(){
-        expand = document.querySelector('.cart-e');
-        carti = document.querySelector('.cartv');
-        document.body.classList.remove('hide-scrollbar');
-        cartx.style.display = 'none';
-        expand.classList.remove('expand');
-        carti.classList.remove('cartv-expand');
-    }
-</script>
 </html>
