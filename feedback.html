@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="Css/feedbackstyle.css" />
+    <link rel="stylesheet" href="Css/temp.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="Images/Logo.png" alt="SDG14 Logo" /></a>
+      </div>
+      <nav class="nav">
+        <ul class="navc">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="#">USER PROFILE</a></li>
+          <li><a href="#" class="active">FEEDBACK</a></li>
+          <li><a href="#">SITEMAP</a></li>
+          <li><a href="Team.html">TEAM</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+      <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+
+    <div class="container">
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label for="name">Name*:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email*:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label>Is this your first time visiting?*</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="firstTime" value="yes" /> Yes</label
+            >
+            <label><input type="radio" name="firstTime" value="no" /> No</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label
+            >Was this website informative and easy to navigate through?*</label
+          >
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="informative" value="yes" /> Yes</label
+            >
+            <label
+              ><input type="radio" name="informative" value="no" /> No</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="improvements"
+            >If No, suggest any improvements for the future:</label
+          >
+          <textarea id="improvements" name="improvements"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Receive updates about the foundation</label>
+          <label
+            ><input type="checkbox" id="updates" name="updates" /> Yes</label
+          >
+        </div>
+        <div class="form-group">
+          <label for="additionalQuestions"
+            >Additional questions or requests:</label
+          >
+          <textarea
+            id="additionalQuestions"
+            name="additionalQuestions"
+          ></textarea>
+        </div>
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button
+          type="button"
+          id="editButton"
+          onclick="editForm()"
+          style="display: none"
+        >
+          Edit
+        </button>
+      </form>
+
+      <div id="preview" style="display: none">
+        <h3>Confirmation</h3>
+        <p><strong>Name:</strong> <span id="previewName"></span></p>
+        <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+        <p>
+          <strong>First Time Visiting:</strong>
+          <span id="previewFirstTime"></span>
+        </p>
+        <p>
+          <strong>Informative and Easy to Navigate:</strong>
+          <span id="previewInformative"></span>
+        </p>
+        <p>
+          <strong>Improvements:</strong> <span id="previewImprovements"></span>
+        </p>
+        <p>
+          <strong>Receive Updates:</strong> <span id="previewUpdates"></span>
+        </p>
+        <p>
+          <strong>Additional Questions or Requests:</strong>
+          <span id="previewAdditionalQuestions"></span>
+        </p>
+        <button onclick="editForm()">Edit</button>
+        <button onclick="confirmSubmit()">Confirm & Submit</button>
+      </div>
+      <div id="error-message"></div>
+      <div id="confirmation-message"></div>
+    </div>
+
+    <footer>
+      <div class="person devider">
+        <a href="pageEditor_Sandinu.html">
+          <h1>SANDINU</h1>
+          <h2>PINNAWALA</h2>
+        </a>
+      </div>
+      <div class="person devider">
+        <a href="#">
+          <h1>KAVINDI</h1>
+          <h2>ATTIGALA</h2>
+        </a>
+      </div>
+      <div class="person devider">
+        <a href="#">
+          <h1>VIDUN</h1>
+          <h2>PERERA</h2>
+        </a>
+      </div>
+      <div class="person devider">
+        <a href="#">
+          <h1>SATHIJA</h1>
+          <h2>DISSANAYAKA</h2>
+        </a>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2024</p>
+      </div>
+    </footer>
+
+    <script src="Js/feedbaack.js"></script>
+  </body>
+</html>
