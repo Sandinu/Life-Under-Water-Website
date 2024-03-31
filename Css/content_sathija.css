@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./../Images/view-underwater-sea-life-cartoon-style.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-top: -7%;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-content div {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.home-content h1 {
+    animation: fadeIn 2s ease-in-out;
+    font-size: 100px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: #00264d;
+    text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+}
+
+.home-content p {
+    animation: fadeIn 1.5s ease-in-out;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #00264d;
+    text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+
+}
+
+.bubbles {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.bubble {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #00264d;
+    box-shadow: 0 0 15px 5px #00264d;
+}
+
+.bubble span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00264d;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+}
+
+.newsletter {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.todo {
+    width: 110px;
+    height: 110px;
+    margin-left: 15px
+}
+
+.target {
+    margin-left: 70px;
+}
+
+.bubble span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 0.3s forwards;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+    padding: 50px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: #84FFE9;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section-header p {
+    font-size: 20px;
+    margin: 0;
+}
+
+h2 {
+    color: #00264d;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-item img {
+    width: 95%;
+    height: auto;
+    max-width: 100%;
+    max-height: 450px;
+    border: 8px solid #84FFE9;
+    transition: transform 0.3s ease;
+}
+
+.image-item p {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+.image-item:hover p {
+    opacity: 1;
+    transform: translateY(-10px);
+    animation: fadeIn1 0.5s ease;
+}
+
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.subtopic {
+    color: #84FFE9;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#things-todo-section {
+    text-align: center;
+    background-image: url(./../Images/darksea.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.points-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.point {
+    width: 300px;
+    height: 300px;
+    background-color: #84FFE9;
+    border-radius: 50%;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    box-shadow: 0 0 0 10px black;
+}
+
+.point .icon {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.point .icon.icon1 {
+    background-image: url('./../Images/icons/donation.png');
+}
+
+.point .icon.icon2 {
+    background-image: url('./../Images/icons/no-plastic-bottles.png');
+}
+
+.point .icon.icon3 {
+    background-image: url('./../Images/icons/reduce_waste.png');
+}
+
+.point .icon.icon4 {
+    background-image: url('./../Images/icons/campaign.png');
+}
+
+.point .icon.icon5 {
+    background-image: url('./../Images/icons/cleanup.png');
+}
+
+.point .icon.icon6 {
+    background-image: url('./../Images/icons/local\ fish.png');
+}
+
+.point .icon.icon7 {
+    background-image: url('./../Images/icons/The\ Global\ Goals\ For\ Sustainable\ Development\ Black.png');
+}
+
+.point p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.point:hover .icon {
+    display: none;
+}
+
+.point:hover p {
+    opacity: 1;
+    animation: slideUp 0.5s ease;
+    background-image: none;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 50%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+#newsletter-section {
+    text-align: center;
+    padding: 50px 0;
+}
