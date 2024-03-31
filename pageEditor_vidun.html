@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Vidun Thamuditha</title>
+    <link rel="icon" href="Images/Logo.png">
+    <link rel="stylesheet" href="Css/pageEditor_vidun.css">
+    <script src="https://kit.fontawesome.com/1a58d1a0f7.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="Images/vidun/SDG-14.gif" alt="SDG14 Logo"></a>
+        </div>
+        <div class="topic">
+            <h1>- Page Editor -</h1>
+        </div>
+    </header> 
+
+    <main>
+        <section id="section1">
+            <div class="image">
+                <img src="Images/vidun/vidun2.png" alt="My photo">
+            </div>
+            
+            <div class="container">
+                <div class="social">
+                    <a href="vidun.20230725@iit.ac.lk">Gmail <i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/vidun-thamuditha-perera-9566b2293/">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/VidunThamuditha">Git-hub <i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/v.i.d.u.u.03?igsh=MWF1NDQzZGU4bWYwYw== ">Instragram<i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="content">
+                    <h1>H.VIDUN THAMUDITHA PERERA</h1>
+                <h2>Role : <span class="role">Student 3</span> </h2>
+                <h4><span>w2051736 |</span>| 20230725</h4>
+                </div>
+                
+            </div>
+        </section>
+        <section id="section2">
+            <div class="do">
+                <div class="text">
+                    <h1>Things I<span class="did"> Did</span>  </h1>
+                    <ul class="doList">
+                        <li><a href="Team.html">Team Page</a></li>
+                        <li><a href="User-profile.html">User-Profile Page</a></li>
+                        <li><a href="content_vidun.html">Content Page</a></li>
+                        <li><a href="pageEditor_vidun.html">Page Editor Page</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="slide">
+                        <input type="radio" name="radioBtn" id="radio1">
+                        <input type="radio" name="radioBtn" id="radio2">
+                        <input type="radio" name="radioBtn" id="radio3">
+                        <input type="radio" name="radioBtn" id="radio4">
+                    
+                        <div class="slide-first" >
+                            <img src="Images/vidun/team.jpg" alt="Team page">
+                        </div>
+                        <div class="slides">
+                            <img src="Images/vidun/userprofile.jpg" alt="User-Profile Page ">
+                        </div>
+                        <div class="slides">
+                            <img src="Images/vidun/contentpage.jpg" alt="Content page">
+                        </div>
+                        <div class="slides">
+                            <img src="Images/vidun/page editor.jpg" alt="Page Editor page">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="autoNav1"></div>
+                            <div class="autoNav2"></div>
+                            <div class="autoNav3"></div>
+                            <div class="autoNav4"></div>
+
+                        </div>
+                        <div class="manual-nav">
+                            <label for="radio1" class="manual"></label>
+                            <label for="radio2" class="manual"></label>
+                            <label for="radio3" class="manual"></label>
+                            <label for="radio4" class="manual"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="end">
+            <h1>Thank You</h1>
+        </div>
+        
+    </footer>
+    
+    <script>
+        var count= 1;
+        setInterval(function(){
+            document.getElementById('radio'+count).checked=true;
+            count++;
+            if(count>4){
+                count=1;
+            }
+        },5000) ; 
+
+    </script>
+</body>
+
+</html>

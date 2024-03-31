@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --c1 : #00132A;
+    --c1 : hwb(213 0% 84%);
     --c2 : #84FFE9;
     --c3: #00C9C9;
     --c4: #000E1F;
@@ -18,8 +18,8 @@ main{
     padding: 40px;
 }
 .title h3{
-    font-size: 30px;
-    margin: 0 0 75px;
+    font-size: 50px;
+    margin: 0 0 65px;
     color: var(--c2);
 
 }
@@ -78,7 +78,11 @@ main{
     font-size: 28px;
     margin-top: 80px;
     margin-left: 50px;
-   
+}
+.que{
+    color: #8aafdc;
+    font-weight: 600;
+    font-size: 28px;
 }
 .icon{
     margin-top: 20px;
@@ -94,9 +98,9 @@ main{
     transition: all 0.5s;
     cursor: pointer;
 }
-.contentBox .name{
+.contentBox .subQus{
     font-size: 20px;
-    color: #2b3006e2;
+    color: var(--c5);
     display: grid;
     text-align: center;
     margin: 10px;
@@ -109,5 +113,96 @@ main{
     width: 375px;
     border-radius: 5px;
     align-items: center;
+    border: none;
+}
+.inputBox .btn .nextBtn{
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    font-weight: 800;
+    font-size:18px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -150px;
+    border-radius: 50px;
+    color: var(--c2);
+    backdrop-filter: blur(5px);
+    background-color: #00000071;
+    letter-spacing: 1px;
+    border: none;
+}
+.btn .nextBtn:hover{
+    color: var(--c5);
+    backdrop-filter: blur(1px);
+    background-color:rgba(0, 19, 42, 0.519);
+    cursor: pointer;
+}
+.inputBox .btn .skipBtn{
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    font-weight: 500;
+    font-size:18px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left:90px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--c2);
+    backdrop-filter: blur(5px);
+    background-color: #00000071;
+    border: none;
+}
+.btn .skipBtn:hover{
+    color: var(--c5);
+    backdrop-filter: blur(1px);
+    background-color:rgba(0, 19, 42, 0.519);
+    cursor: pointer;
+}
+.progress{
+    height: 30px;
+    width: 500px;
+    position: relative;
+    color: #d8d8d8;
+    background-color: #d8d8d8;
+    margin:0 auto 100px auto;
+    top: -35px;
+    border-radius: 15px;
+    align-items: center;
+}
+.progressBar{
+    width:0%;
+    min-width: 2rem; 
+    content: '';
+    height: 30px;
+    background-color: #84FFE9;
+    transition: width 0.3s;
+    border-radius: 15px;
+    align-items: center;
+    
+}
+.progressPer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    color: black;
+    align-items: center;
+    display: flex;
+}
+.progressPer h2{
+    font-weight: 400;
+    font-size: 16px;
+}
+.outputBox{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: var(--c5);
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    margin: 0 auto 100px auto;
 
 }

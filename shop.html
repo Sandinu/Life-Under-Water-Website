@@ -12,15 +12,15 @@
 <body class="hide-scrollbar">
     <header>
         <div class="logo">
-            <a href="index.html"><img src="Images/Logo.png" alt="SDG14 Logo"></a>
+            <a href="home.html"><img src="Images/Logo.png" alt="SDG14 Logo"></a>
         </div>
         <nav class="nav">
             <ul class="navc">
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="#">GALLERY</a></li>
                 <li><a href="shop.html" class="active">SHOP</a></li>
-                <li><a href="#">USER PROFILE</a></li>
-                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="User-profile.html">USER PROFILE</a></li>
+                <li><a href="FB.html">FEEDBACK</a></li>
                 <li><a href="#">SITEMAP</a></li>
                 <li><a href="Team.html">TEAM</a></li>
             </ul>
@@ -105,7 +105,7 @@
     </main>
     <footer>
         <div class="person devider">
-            <a href="pageEditor_Sandinu.html">
+            <a href="pageEditor_Sandinu.html" target="_blank">
                 <h1>SANDINU</h1>
                 <h2>PINNAWALA</h2>
             </a>
@@ -133,48 +133,49 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script src="Js/shop.js" defer></script>
+
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+
+        hb.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+
+        xmark.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
+
+    <script>
+        cart = document.querySelector('.cartv');
+        cartx = document.querySelector('.cartx');
+
+        cart.onclick = function(){
+            expand = document.querySelector('.cart-e');
+            carti = document.querySelector('.cartv');
+            document.body.classList.add('hide-scrollbar');
+            cartx.style.display = 'block';
+            expand.classList.toggle('expand');
+            carti.classList.toggle('cartv-expand');
+        }
+
+        cartx.onclick = function(){
+            expand = document.querySelector('.cart-e');
+            carti = document.querySelector('.cartv');
+            document.body.classList.remove('hide-scrollbar');
+            cartx.style.display = 'none';
+            expand.classList.remove('expand');
+            carti.classList.remove('cartv-expand');
+        }
+    </script>
 </body>
-<script src="Js/shop.js" defer></script>
 
-<script>
-    hb = document.querySelector('.hamburger');
-    xmark = document.querySelector('.xmark');
-
-    hb.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'none';
-        xmark.style.display = 'block';
-        nav.classList.toggle('navactive');
-    }
-
-    xmark.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'block';
-        xmark.style.display = 'none';
-        nav.classList.remove('navactive');
-    }
-</script>
-
-<script>
-    cart = document.querySelector('.cartv');
-    cartx = document.querySelector('.cartx');
-
-    cart.onclick = function(){
-        expand = document.querySelector('.cart-e');
-        carti = document.querySelector('.cartv');
-        document.body.classList.add('hide-scrollbar');
-        cartx.style.display = 'block';
-        expand.classList.toggle('expand');
-        carti.classList.toggle('cartv-expand');
-    }
-
-    cartx.onclick = function(){
-        expand = document.querySelector('.cart-e');
-        carti = document.querySelector('.cartv');
-        document.body.classList.remove('hide-scrollbar');
-        cartx.style.display = 'none';
-        expand.classList.remove('expand');
-        carti.classList.remove('cartv-expand');
-    }
-</script>
 </html>
