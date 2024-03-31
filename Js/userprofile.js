@@ -2,7 +2,7 @@ let stepNum =document.getElementsByClassName('.stepNo');
 let queTopic=document.querySelector('.step');
 let queNum=document.querySelector('.que');
 let question=document.querySelector('.subQus');
-let inputArea=document.getElementsByClassName('.getInput');
+let inputArea=document.querySelector('.getInput');
 const nextButton = document.querySelector('.nextBtn');
 const skipButton=document.querySelector('.skipBtn')
 const progressBar = document.querySelector('.progressBar');
@@ -16,7 +16,7 @@ let currentTopicIndex=0;
 const questionArr=['Full Name','Age','Gender','Agree with the privacy and terms','Area of study','Highest Degree','University','Completion Year','Min hours per week','Contact Number','Email','Address'];
 let currentQusIndex=0;
 
-let answerArr=[null,null,null,null,null,null,null,null];
+let answerArr=[null,null,null,null,null,null,null,null,null,null,null,null];
  
 function updateTopic() {
    queTopic.innerHTML=`Step<span class="stepNo"> ${currentTopicIndex+1}</span> -<span id="questionType">${topicArr[currentTopicIndex]}</span> `
@@ -28,76 +28,102 @@ function updateQus(){
     question.innerHTML=`<h4 class="subQus">${questionArr[currentQusIndex]}</h4>`
 }
 
-function handleNextButtonClick(){
-    answerArr[currentQusIndex]=inputArea.value;
-    let answeredQuestions=0;
-    for(let i=0;i<answerArr.length;i++){
-        if(answerArr[i]===null){
-            
-        }else{
-            answeredQuestions++
-        }
-    }
-    let totalQuestions = questionArr.length;
-
-    let progress = Math.floor((answeredQuestions / totalQuestions) * 100);
+function saveAnswer(){
+    let answer = inputArea.value;
+    console.log(answer);
+    answerArr[currentQusIndex]=answer;
+    
+}
+function updateProgressBar() {
+    const answeredQuestions = answerArr.filter(answer => answer !== null).length;
+    const progress = (answeredQuestions / questionArr.length) * 100;
     progressBar.style.width = `${progress}%`;
-    progressPer.innerHTML = `${progress}%`;
-    if (currentQusIndex === questionArr.length - 1 || currentTopicIndex === 3) {
-        // Display completion message or perform final actions
-        return;
-    }
-    
+    progressPer.textContent = `${progress.toFixed(1)}%`;
+}
+
+function handleNextButtonClick(){
+    saveAnswer();
+    printOutputdata(questionArr[currentQusIndex],answerArr[currentQusIndex]);
+    updateProgressBar();
     if (currentQusIndex === questionArr.length - 1) {
-        if(currentTopicIndex === 4){
-            currentTopicIndex = (currentTopicIndex + 1) % topicArr.length; // Cycle through topics 
-        }
-        currentQusIndex = 0;
-        updateQus();
-        updateTopic();
-    } else {
-        currentQusIndex = (currentQusIndex + 1) % questionArr.length;
-        if (currentQusIndex === 4 || currentQusIndex === 8) { // Change step to 2 after the 3rd index in questionArr
-            currentTopicIndex = currentTopicIndex + 1; // Change to step 2
-        }
-        
-        updateQus();
-        updateTopic();    }
-        
-    
-        updateQus();
-        updateTopic();   
-        if (currentQusIndex > 0) {
-            let prevQus = questionArr[currentQusIndex - 1];
-            let answer = answerArr[currentQusIndex - 1];
-            printOutputdata(prevQus, answer);
-        }
-}
-function printOutputdata(question, answer){
-    let outputBox = document.querySelector('.outputBox');
-    outputBox.innerHTML = `<p><strong>${question}</strong>: ${answer}</p>`;
-}
-function handleSkipButtonClick() {
-    if (currentQusIndex === questionArr.length - 1 || currentTopicIndex === topicArr.length - 1) {
         if (currentTopicIndex === topicArr.length - 1) {
-            //currentTopicIndex = 0; // Start from the first step
+            nextButton.style.display = 'none';
+            skipButton.style.display = 'none';
+            return;
+
         } else {
             currentTopicIndex++;
         }
-        currentQusIndex = 0; // Start from the first question of the next step
+        currentQusIndex = 0;
+    } else {
+        currentQusIndex++;
+        if (currentQusIndex === 4 || currentQusIndex === 8 ) { // Change topic after the 4rd and 8th question
+            currentTopicIndex++;
+        }
+        
+    }
+    
+    updateQus();
+    updateTopic();
+
+    
+}  
+function printOutputdata(question, answer){
+    let output = `<p><strong>${question}:</strong> ${answer}</p>`;
+    document.querySelector('.outputBox').innerHTML = output;
+}
+function handleSkipButtonClick() {
+    
+    if (currentQusIndex === questionArr.length - 1) {
+        if (currentTopicIndex === topicArr.length - 1) {
+            //currentTopicIndex = 0; // Start from the first step
+            skipButton.style.display='none';
+            nextButton.style.display='none';
+            return;
+        } else {
+            currentTopicIndex++;
+        }
+        //currentQusIndex = 0; // Start from the first question of the next step
     } else {
         currentQusIndex++; // Move to the next question
         if (currentQusIndex === 4) { // After first 4 questions, update topic and step
             currentTopicIndex++;
-            currentQusIndex = 0;
+            currentQusIndex=4;
         }
-        if (currentQusIndex === 4 || currentQusIndex === 8) { // Change question after the 3rd and 7th index in questionArr
-            currentQusIndex++;
+        else if (currentQusIndex === 8) { // Change question after the 3rd and 7th index in questionArr
+            currentTopicIndex++;
+            currentQusIndex=8;
         }
+        
     }
     updateQus();
     updateTopic();
 }
+function tab(tabIndex) {
+    switch(tabIndex) {
+        case 0:
+            currentTopicIndex = 0;
+            currentQusIndex = 0;
+            break;
+        case 1:
+            currentTopicIndex = 1;
+            currentQusIndex = 4;
+            break;
+        case 2:
+            currentTopicIndex = 2;
+            currentQusIndex = 8;
+            break;
+        default:
+            break;
+    }
+    updateQus();
+    updateTopic();
+}
+document.querySelectorAll('.tab').forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        tab(index);
+    });
+});
 
 skipButton.addEventListener('click', handleSkipButtonClick);
 
