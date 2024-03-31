@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url(./../Images/ai-generated-8319806_1280.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    width: 50%;
+    margin: 85px auto;
+    padding: 20px;
+    background-color: #000E1F;
+    border-radius: 8px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 38px;
+}
+
+/* Additional styles for the form */
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+label {
+    color: #00C9C9;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    color: #fff;
+    background: rgba(0, 201, 201, 0.2);
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(0, 201, 201, 0.2);
+    border-radius: 50px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00C9C9;
+    color: #000E1F;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #84FFE9;
+}
+
+#error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#confirmation-message {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
