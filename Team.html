@@ -138,11 +138,11 @@
                         </div>
                         <ul class="icon">
                             <li style="--i: 1">
-                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/VidunThamuditha"><i class="fa-brands fa-github"></i></a>
                             </li>
     
                             <li style="--i: 2">
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/vidun-thamuditha-perera-9566b2293/"><i class="fa-brands fa-linkedin"></i></a>
                             </li>
                             
                             <li style="--i: 3">
@@ -223,23 +223,24 @@
             <p>Copyright &copy; 2024</p>
         </div>
     </footer>
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+    
+        hb.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+    
+        xmark.onclick = function(){
+            nav = document.querySelector('.nav');
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
 </body>
-<script>
-    hb = document.querySelector('.hamburger');
-    xmark = document.querySelector('.xmark');
 
-    hb.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'none';
-        xmark.style.display = 'block';
-        nav.classList.toggle('navactive');
-    }
-
-    xmark.onclick = function(){
-        nav = document.querySelector('.nav');
-        hb.style.display = 'block';
-        xmark.style.display = 'none';
-        nav.classList.remove('navactive');
-    }
-</script>
 </html>
