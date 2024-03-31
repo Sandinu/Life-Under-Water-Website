@@ -112,7 +112,7 @@ button{
     height: 48px;
     position: relative;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     border-radius: 25px;
     font-size:18px ;
     background-color: #00C9C9;
@@ -130,12 +130,10 @@ button:hover{
     top: 0; 
     right: 0;
     bottom: 0;
-    
     z-index: -1;
 }
 #section1 #nav2{
     display: flex;
-    width: 100%;
     text-align: center;
     align-items: center;
     z-index: 5;
@@ -144,14 +142,13 @@ button:hover{
     text-align: center;
     border: 1px solid var(--c2);
     backdrop-filter: blur(5px) ;
-    border-radius: 20px;
-    position: absolute;
+    border-radius: 50px;
+    position: relative;
     left: 0;
     right: 0;
-    bottom: 20px;
-    z-index: 10;
-    margin: auto;
-    padding: 12px 15px;
+    margin:auto;
+    z-index: 5;
+    padding: 12px;
     width: 500px;
     align-items: center;
     justify-content: center;
@@ -201,7 +198,7 @@ button:hover{
     display: flex;
 }
 .targetBox {
-    border: 1px solid var(--c2);
+    border: 5px solid var(--c2);
     display: flex;
     margin: 20px;
     height: 300px;
@@ -217,6 +214,10 @@ button:hover{
 }
 .targetBox .content h3{
     justify-content: center;
+    font-size: 35px;
+}
+.container .targetBox .content p{
+    text-align: center;
     font-size: 25px;
 }
 .targetBox img{
@@ -392,9 +393,15 @@ footer{
     .copyright{
         font-size: 10px;
     }
+    .content h1{
+        font-size: 70px;
+    }
+    .navc2{
+        width: 300px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 738px) {
     .hamburger{
         display: block;
     }
@@ -495,6 +502,53 @@ footer{
         top: 20px;
         cursor: pointer;
         z-index: 10;
+    }
+    .content h1 {
+        font-size: 60px;
+    }
+    .content .para1 {
+        font-size: 18px;
+    }
+    .navc2 {
+        width: 100%;
+        padding: 10px;
+    }
+    .navc2 li a {
+        font-size: 16px;
+    }
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .targetBox {
+        width: 90%;
+    }
+    .targetBox img {
+        width: 120px;
+        height: 160px;
+    }
+    .targetBox .content {
+        margin: 10px;
+    }
+    #section3 .queot img {
+        width: 200px;
+        height: 120px;
+        padding: 10px;
+    }
+    .text h2 {
+        font-size: 18px;
+    }
+    #section4 h1 {
+        font-size: 26px;
+    }
+    #section4 .facts {
+        margin: 8px;
+    }
+    .facts h3 {
+        font-size: 18px;
+    }
+    .facts h4 {
+        font-size: 12px;
     }
 }
 
