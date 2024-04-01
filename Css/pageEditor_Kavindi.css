@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 2cm;
+    font-size: 150%;
+    
+    
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    background-color: rgb(27, 81, 132);
+    padding: 2cm;
+    border-radius: 0.5rem;
+    gap: 2cm;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+}
+
+
+.links{
+    padding: 10px;
+    background-color: rgb(89, 210, 210);
+    border-radius: 10px;
+
+}
+.links:hover{
+    background-color: antiquewhite;
+}
+.studentimg{
+    width: 80%;
+    height: auto;
+    display: block;
+    float: right;
+    border-radius: 10px;
+}
+.studentimg:hover{
+    transform:scale(1.1);
+    transition: 0.4s;
+}
+.studentimg:not(:hover){
+    transform:scale(1);
+    transition: 0.4s;
+}
+h1{
+    text-align: center;
+    background-color:rgb(27, 81, 132);
+    color:white;
+}
+p{
+    text-align: justify;
+}

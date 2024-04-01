@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c1 : #00132A;
+    --c2 : #84FFE9;
+    --c3: #00C9C9;
+    --c4: #000E1F;
+    --c5: #d8d8d8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.cause1 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: left;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+
+.cause2 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: right;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+.cause3 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: left;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+.cause4 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: right;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+
+.cause1{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+    background-color: #00132A;
+}
+
+.cause1 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.cause2 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.cause3 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.cause4 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+.description h2{
+    font-size: 32px;
+}
+.cause1 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.cause2 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.cause3 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.cause4 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.cause2{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+    background-color: #000E1F;
+}
+.cause3{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+}
+.cause4{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+    background-color: #000E1F;
+}
+
+.rem1 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: left;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+
+.rem2 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: right;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+.rem3 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: left;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+.rem4 img{
+    max-width: 320px;
+    max-height: 200px;
+    float: right;
+    border: 3px solid #00132A;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+
+.rem1{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+    background-color: #00132A;
+}
+
+.rem1 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.rem2 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.rem3 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.rem4 .description{
+    color: #84FFE9;
+    padding-bottom: 10px;
+}
+
+.rem1 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.rem2 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.rem3 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.rem4 .description p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.rem2{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+    background-color: #000E1F;
+}
+.rem3{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+}
+.rem4{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+    background-color: #000E1F;
+}
