@@ -35,7 +35,27 @@ function submitForm() {
 }
 
 function confirmSubmit() {
-    // Perform actual submission here (send email, etc.)
+    var name = document.getElementById("previewName").textContent;
+    var email = document.getElementById("previewEmail").textContent;
+    var firstTime = document.getElementById("previewFirstTime").textContent;
+    var informative = document.getElementById("previewInformative").textContent;
+    var improvements = document.getElementById("previewImprovements").textContent;
+    var updates = document.getElementById("previewUpdates").textContent;
+    var additionalQuestions = document.getElementById("previewAdditionalQuestions").textContent;
+
+    var mailtoLink = "mailto:sathijadissanayake@gmail.com" +
+        "?subject=Feedback Submission" +
+        "&body=Name: " + encodeURIComponent(name) +
+        "%0AEmail: " + encodeURIComponent(email) +
+        "%0AFirst Time Visiting: " + encodeURIComponent(firstTime) +
+        "%0AInformative and Easy to Navigate: " + encodeURIComponent(informative) +
+        "%0AImprovements: " + encodeURIComponent(improvements) +
+        "%0AReceive Updates: " + encodeURIComponent(updates) +
+        "%0AAdditional Questions or Requests: " + encodeURIComponent(additionalQuestions);
+
+    window.location.href = mailtoLink;
+
+    // Display confirmation message
     var confirmationMessage = document.getElementById("confirmation-message");
     confirmationMessage.innerHTML = "Thank you for your feedback!";
     
