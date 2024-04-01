@@ -2,7 +2,7 @@ let stepNum =document.getElementsByClassName('.stepNo');
 let queTopic=document.querySelector('.step');
 let queNum=document.querySelector('.que');
 let question=document.querySelector('.subQus');
-let inputArea=document.querySelector('.getInput');
+let inputArea=document.querySelector('.inputtext');
 const nextButton = document.querySelector('.nextBtn');
 const skipButton=document.querySelector('.skipBtn')
 const progressBar = document.querySelector('.progressBar');
@@ -41,10 +41,18 @@ function updateProgressBar() {
     progressPer.textContent = `${progress.toFixed(1)}%`;
 }
 
+
 function handleNextButtonClick(){
+    if (!inputArea.value.trim()) {
+        alert('Please enter answer before next');
+        return;
+    }
     saveAnswer();
     printOutputdata(questionArr[currentQusIndex],answerArr[currentQusIndex]);
     updateProgressBar();
+    inputArea.value = '';
+   
+
     if (currentQusIndex === questionArr.length - 1) {
         if (currentTopicIndex === topicArr.length - 1) {
             nextButton.style.display = 'none';
@@ -70,7 +78,7 @@ function handleNextButtonClick(){
 }  
 function printOutputdata(question, answer){
     let output = `<p><strong>${question}:</strong> ${answer}</p>`;
-    document.querySelector('.outputBox').innerHTML = output;
+    document.querySelector('.outputBox').innerHTML += output;
 }
 function handleSkipButtonClick() {
     
@@ -99,7 +107,7 @@ function handleSkipButtonClick() {
     updateQus();
     updateTopic();
 }
-function tab(tabIndex) {
+function tabx(tabIndex) {
     switch(tabIndex) {
         case 0:
             currentTopicIndex = 0;
@@ -121,7 +129,7 @@ function tab(tabIndex) {
 }
 document.querySelectorAll('.tab').forEach((tab, index) => {
     tab.addEventListener('click', () => {
-        tab(index);
+        tabx(index);
     });
 });
 
