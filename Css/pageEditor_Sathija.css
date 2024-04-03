@@ -33,17 +33,16 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+
+.header h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    height: 30px;
+    position: absolute;
+    left: 50px;
+    right: 0;
+    top: 20px;
 }
 
 .logo {
@@ -53,17 +52,6 @@ section {
     cursor: default;
 }
 
-.navbar a {
-    font-size: 1.7rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: var(--main-color);
-
-}
 
 .home {
     display: flex;

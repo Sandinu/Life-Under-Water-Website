@@ -92,7 +92,7 @@ body{
     background-position: center;
 }
 .sathija{
-    background: linear-gradient(rgba(0, 19, 42, 0),rgba(0, 19, 42, 0.9)),url(../Images/Team/Sathija.png);
+    background: linear-gradient(rgba(0, 19, 42, 0),rgba(0, 19, 42, 0.9)),url(../Images/Team/Sathijab.png);
     background-size: cover;
     background-position: center;
 }
@@ -161,5 +161,107 @@ body{
     }
     100%{
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        margin: 50px auto;
+    }
+    .title img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .title_text{
+        line-height: 1px;
+        padding-left: 10px;
+        color: white;
+        border-left: 1px solid white;
+        margin-left: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    
+    .title_text h1{
+        color: var(--c2);
+        font-size: 20px;
+    }
+    
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        margin-top: -20px;
+    }
+    
+    .card{
+        width: 160px;
+        height: 200px;
+        min-width: 120px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    
+    .imgCont{
+        width: 160px;
+    }
+    
+    .water h1{
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 130px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 ;
+        transform: translate(-10px,50px);
+        text-align: center;
+    }
+    
+    .name{
+        text-align: center;
+        color: white;
+        line-height: 5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        letter-spacing: 2px;
+        
+    }
+    .name h1{
+        font-size: 25px;
+    }
+    
+    .name h2{
+        font-weight: 400;
+        font-size: 17px;
+    }
+    
+    .name::before{
+        content: '';
+        border-bottom: 1px solid white;
+        width: 70px;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transform: translateX(-50%);
+    
+    }
+    .load{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .load img{
+        width: 60px;
     }
 }

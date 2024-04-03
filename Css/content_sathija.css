@@ -162,8 +162,8 @@ h2 {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .image-item {
@@ -175,7 +175,7 @@ h2 {
 .image-item img {
     width: 95%;
     height: auto;
-    max-width: 100%;
+    max-width: 300px;
     max-height: 450px;
     border: 8px solid #84FFE9;
     transition: transform 0.3s ease;
@@ -183,8 +183,9 @@ h2 {
 
 .image-item p {
     position: absolute;
-    font-size: 25px;
+    font-size: 1.3rem;
     font-weight: bold;
+    max-width: 315px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -328,4 +329,59 @@ h2 {
 #newsletter-section {
     text-align: center;
     padding: 50px 0;
+}
+
+#newsletter-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-image img {
+    max-width: 150px;
+    filter: invert(100%)
+}
+
+.newsletter-form {
+    margin-left: 20px;
+}
+
+.newsletter-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
 }

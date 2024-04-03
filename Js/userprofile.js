@@ -2,7 +2,7 @@ let stepNum =document.getElementsByClassName('.stepNo');
 let queTopic=document.querySelector('.step');
 let queNum=document.querySelector('.que');
 let question=document.querySelector('.subQus');
-let inputArea=document.querySelector('.getInput');
+let inputArea=document.querySelector('.inputtext');
 const nextButton = document.querySelector('.nextBtn');
 const skipButton=document.querySelector('.skipBtn')
 const progressBar = document.querySelector('.progressBar');
@@ -40,11 +40,45 @@ function updateProgressBar() {
     progressBar.style.width = `${progress}%`;
     progressPer.textContent = `${progress.toFixed(1)}%`;
 }
+function validationEmail(Email) {
+    const reg = /\S+@\S+\.\S+/;
+    return reg.test(Email);
+}
+function validationContact(contactNumber) {
+    
+        const access = /^\+?(\d[\d\-\s\(\)]{8,20}\d|\(\d{2,}\)[\d\-\s]{6,20}\d)$/;
+        return access.test(contactNumber);
+}
 
-function handleNextButtonClick(){
-    saveAnswer();
+
+
+function handleNextButtonClick(contactNumber){
+    if (!inputArea.value.trim()) {
+        alert('Please enter answer before next');
+        inputArea.value = '';
+        return;
+    }
+    if(currentQusIndex===10 && !validationEmail(inputArea.value.trim())){
+        alert("Invalid emailEnter email again");
+        return;
+    }
+    if(contactNumber.length===10){
+        if (currentQusIndex === 9 && !validationContact(inputArea.value.trim())) {
+            alert("Invalid Input:Enter again Email");
+            return;
+        }
+    }
+    else{
+        alert("Enter 10 number contact number");
+        return;
+    }
+    
+     saveAnswer();
     printOutputdata(questionArr[currentQusIndex],answerArr[currentQusIndex]);
     updateProgressBar();
+    inputArea.value = '';
+   
+
     if (currentQusIndex === questionArr.length - 1) {
         if (currentTopicIndex === topicArr.length - 1) {
             nextButton.style.display = 'none';
@@ -70,7 +104,7 @@ function handleNextButtonClick(){
 }  
 function printOutputdata(question, answer){
     let output = `<p><strong>${question}:</strong> ${answer}</p>`;
-    document.querySelector('.outputBox').innerHTML = output;
+    document.querySelector('.outputBox').innerHTML += output;
 }
 function handleSkipButtonClick() {
     
@@ -99,7 +133,7 @@ function handleSkipButtonClick() {
     updateQus();
     updateTopic();
 }
-function tab(tabIndex) {
+function tabx(tabIndex) {
     switch(tabIndex) {
         case 0:
             currentTopicIndex = 0;
@@ -121,7 +155,7 @@ function tab(tabIndex) {
 }
 document.querySelectorAll('.tab').forEach((tab, index) => {
     tab.addEventListener('click', () => {
-        tab(index);
+        tabx(index);
     });
 });
 

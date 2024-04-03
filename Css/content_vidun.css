@@ -38,7 +38,7 @@ header{
     z-index: 5;
 }
 .logo img{
-    width: 7em;
+    width: 5em;
     margin-left: 1em;
     cursor: pointer;
 }
@@ -192,16 +192,20 @@ button:hover{
     margin: 10px auto;
 }
 
-#section .container{
+#section2 .container{
     margin-top: 50px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.targetBox {
+.targetBox{
     border: 5px solid var(--c2);
     display: flex;
-    margin: 20px;
+    margin: 10px;
     height: 300px;
+    width: 45%;
+    overflow: hidden;
 }
 .targetBox:hover{
     box-shadow: rgba(74, 230, 230, 0.619);
@@ -210,15 +214,15 @@ button:hover{
     text-align: center;
     justify-content: center;
     margin: 50px;
-    
 }
 .targetBox .content h3{
     justify-content: center;
-    font-size: 35px;
+    font-size: 25px;
 }
 .container .targetBox .content p{
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
+    
 }
 .targetBox img{
      width: 200px;
