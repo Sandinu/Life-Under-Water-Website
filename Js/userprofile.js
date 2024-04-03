@@ -61,16 +61,6 @@ function handleNextButtonClick(contactNumber){
         alert("Invalid emailEnter email again");
         return;
     }
-    if(contactNumber.length===10){
-        if (currentQusIndex === 9 && !validationContact(inputArea.value.trim())) {
-            alert("Invalid Input:Enter again Email");
-            return;
-        }
-    }
-    else{
-        alert("Enter 10 number contact number");
-        return;
-    }
     
      saveAnswer();
     printOutputdata(questionArr[currentQusIndex],answerArr[currentQusIndex]);
