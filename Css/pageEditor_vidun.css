@@ -119,11 +119,11 @@ header{
     backdrop-filter: blur(5px);
     border: none;
 }
-.container h1{
+.container h2{
     font-size: 45px;
     color: #00C9C9;
 }
-.container h2{
+.container .head2{
     font-size: 35px;
 
 }
@@ -144,11 +144,11 @@ header{
     align-items: center;
     margin: 100px 0px;
 }
-.text h1{
+.text h2{
     font-size: 60px;
     font-style: italic;
 }
-.text h1 .did{
+.text h2 .did{
     color: #00C9C9;
 }
 .text ul li{

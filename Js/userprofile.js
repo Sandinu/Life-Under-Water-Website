@@ -40,14 +40,40 @@ function updateProgressBar() {
     progressBar.style.width = `${progress}%`;
     progressPer.textContent = `${progress.toFixed(1)}%`;
 }
+function validationEmail(Email) {
+    const reg = /\S+@\S+\.\S+/;
+    return reg.test(Email);
+}
+function validationContact(contactNumber) {
+    
+        const access = /^\+?(\d[\d\-\s\(\)]{8,20}\d|\(\d{2,}\)[\d\-\s]{6,20}\d)$/;
+        return access.test(contactNumber);
+}
 
 
-function handleNextButtonClick(){
+
+function handleNextButtonClick(contactNumber){
     if (!inputArea.value.trim()) {
         alert('Please enter answer before next');
+        inputArea.value = '';
         return;
     }
-    saveAnswer();
+    if(currentQusIndex===10 && !validationEmail(inputArea.value.trim())){
+        alert("Invalid emailEnter email again");
+        return;
+    }
+    if(contactNumber.length===10){
+        if (currentQusIndex === 9 && !validationContact(inputArea.value.trim())) {
+            alert("Invalid Input:Enter again Email");
+            return;
+        }
+    }
+    else{
+        alert("Enter 10 number contact number");
+        return;
+    }
+    
+     saveAnswer();
     printOutputdata(questionArr[currentQusIndex],answerArr[currentQusIndex]);
     updateProgressBar();
     inputArea.value = '';
