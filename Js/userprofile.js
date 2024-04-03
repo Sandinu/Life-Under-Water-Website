@@ -45,7 +45,6 @@ function validationEmail(Email) {
     return reg.test(Email);
 }
 function validationContact(contactNumber) {
-    
         const access = /^\+?(\d[\d\-\s\(\)]{8,20}\d|\(\d{2,}\)[\d\-\s]{6,20}\d)$/;
         return access.test(contactNumber);
 }

@@ -24,12 +24,12 @@ h1{
     padding: 10 10 10 10;
 }
 
-.slider{
+.slide{
     height: 100vh;
     margin-top: -5px;
     position: relative;
 }
-.slider .list .item{
+.slide .list .item{
     position: absolute;
     inset:  0 0 0 0 ;
     overflow: hidden;
@@ -37,7 +37,7 @@ h1{
     transition: .5s;
 }
 
-.slider .list .item img{
+.slide .list .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -48,7 +48,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider .list .item::after{
+.slide .list .item::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -60,7 +60,7 @@ h1{
         );
 }
 
-.slider .list .item .content{
+.slide .list .item .content{
     position: absolute;
     left: 10%;
     top: 20%;
@@ -69,16 +69,16 @@ h1{
     z-index: 1;
 }
 
-.slider .list .item .content p:nth-child(1){
+.slide .list .item .content p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
 }
 
-.slider .list .item .content h2{
+.slide .list .item .content h2{
     font-size: 100px;
     margin: 0;
 }
-.slider .list .item.active{
+.slide .list .item.active{
     opacity: 1;
     z-index: 10;
 }
@@ -90,19 +90,19 @@ h1{
     }
 }
 
-.slider .list .item.active p:nth-child(1),
-.slider .list .item.active h2,
-.slider .list .item.active p:nth-child(3){
+.slide .list .item.active p:nth-child(1),
+.slide .list .item.active h2,
+.slide .list .item.active p:nth-child(3){
     transform: translateY(30px);
     filter: blur(20px);
     opacity: 0;
     animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
-.slider .list .item.active h2{
+.slide .list .item.active h2{
     animation-delay: 1s;
 }
-.slider .list .item.active p:nth-child(3){
+.slide .list .item.active p:nth-child(3){
     animation-duration: 1.5s;
 }
 .arrows{
@@ -166,7 +166,7 @@ h1{
     .thumbnail{
         justify-content: start;
     }
-    .slider .list .item .content h2{
+    .slide .list .item .content h2{
         font-size: 60px;
     }
     .arrows{

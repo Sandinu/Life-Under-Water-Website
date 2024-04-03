@@ -97,6 +97,7 @@ footer{
     text-align: center;
 }
 
+
 .person{
     display: flex;
     align-items: center;
@@ -112,16 +113,18 @@ footer{
     color: var(--c5);
     transition: all 0.3s;
 }
-
-.person a:hover, a:active{
-    color: var(--c3);
-    letter-spacing: 3px;
-    transition: all 0.3s;
-}
 .person h1{
     font-size: 20px;
     font-weight: 600;   
+    color: var(--c5) !important;
 }
+
+.person a:hover, a:active, .person a:hover h1{
+    color: var(--c3) !important;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+}
+
 
 .person h2{
     font-size: 20px;
