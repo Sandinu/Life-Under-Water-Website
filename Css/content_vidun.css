@@ -107,20 +107,24 @@ header{
     font-weight: 400;
     color: beige;
 }
-button{
-    width: 170px;
-    height: 48px;
+.find a{
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    border-radius: 25px;
+    top: 50px;
+    margin-left: 0px;
+    margin-right: 0;
+    padding: 15px;
     font-size:18px ;
+    border-radius: 50px;
     background-color: #00C9C9;
     cursor: pointer;
+    border: 1px solid black;
     border: none;
+    text-decoration: none;
+    
+    
     
 }
-button:hover{
+.find a:hover{
     background-color: var(--c5) ;
     transition: 0.5s;
     color: #00132A;
@@ -133,10 +137,12 @@ button:hover{
     z-index: -1;
 }
 #section1 #nav2{
+    position: relative;
     display: flex;
     text-align: center;
     align-items: center;
     z-index: 5;
+    margin-top: 270px;
 }
 .navc2{
     text-align: center;
