@@ -14,6 +14,11 @@
     box-sizing: border-box;
 }
 
+h1{
+    text-align: center;
+    color: #0e6565;
+}
+
 
 .cause1 img{
     max-width: 320px;
